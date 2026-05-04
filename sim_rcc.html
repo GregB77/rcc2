@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<script src="rcc.js"></script>
+
+<script>
+function formatEuro(value) {
+    return new Intl.NumberFormat('fr-FR', {
+        style: 'currency',
+        currency: 'EUR'
+    }).format(value);
+}
+
+function simulate() {
+
+    const data = {
+        refDate: document.getElementById('refDate').value,
+        statut: document.getElementById('statut').value,
+        dispositif: document.getElementById('dispositif').value,
+        birthDate: document.getElementById('birthDate').value,
+        entryDate: document.getElementById('entryDate').value,
+        annualSalary: document.getElementById('annualSalary').value,
+        forcerILL: document.getElementById('forcerILL').checked
+    };
+
+    const params = loadParams();
+
+    const result = calculateRCC(data, params);
+
+    const tbody = document.getElementById('results');
+
+    tbody.innerHTML = `
+        <tr>
+            <td>Age</td>
+            <td class="result">${result.age.toFixed(2)} ans</td>
+        </tr>
+
+        <tr>
+            <td>Ancienneté</td>
+            <td class="result">${result.seniority.toFixed(2)} ans</td>
+        </tr>
+
+        <tr>
+            <td>Salaire mensuel</td>
+            <td class="result">${formatEuro(result.monthlySalary)}</td>
+        </tr>
+
+        <tr>
+            <td>Indemnité retenue</td>
+            <td class="result">${formatEuro(result.indemniteRetenue)}</td>
+        </tr>
+
+        <tr>
+            <td>Supra-légale</td>
+            <td class="result">${formatEuro(result.supra)}</td>
+        </tr>
+
+        <tr>
+            <td>Total avant plafond</td>
+            <td class="result">${formatEuro(result.totalAvantPlafond)}</td>
+        </tr>
+
+        <tr>
+            <td>Total avec plafond</td>
+            <td class="result">${formatEuro(result.totalAvecPlafond)}</td>
+        </tr>
+
+        <tr>
+            <td>Rémunération mensuelle</td>
+            <td class="result">${formatEuro(result.remunerationMensuelle)}</td>
+        </tr>
+
+        <tr>
+            <td>Durée du dispositif</td>
+            <td class="result">${result.dureeDispositif} mois</td>
+        </tr>
+
+        <tr>
+            <td>Rémunération totale</td>
+            <td class="result">${formatEuro(result.remunerationTotale)}</td>
+        </tr>
+
+        <tr>
+            <td>Rémunération + indemnité</td>
+            <td class="result">${formatEuro(result.remunerationAvecIndemnite)}</td>
+        </tr>
+    `;
+}
+</script>
+
+</body>
+</html>
