@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simulateur RCC</title>
+  <link rel="stylesheet" href="sim_rcc.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Simulateur RCC (A2:C34) – "RCC avec Préavis"</h1>
+    <div class="actions">
+      <a href="rcc_param.html">Paramètres</a>
+      <button id="btnRecalc" class="primary" type="button">Recalculer</button>
+      <button id="btnExport" type="button">Exporter CSV</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <p class="hint">Les cellules en <span class="blue">bleu</span> sont modifiables. Les paramètres (E2:G36) proviennent de <code>rcc_param.html</code> via LocalStorage.</p>
+    <section class="card"><div class="tableWrap"><table id="grid" class="grid"></table></div></section>
+    <details class="debug"><summary>Formules & état (diagnostic)</summary><pre id="debug"></pre></details>
+  </main>
+
+  <script src="sim_rcc.js"></script>
+</body>
+</html>
