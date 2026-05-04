@@ -1,20 +1,16 @@
-// Données extraites automatiquement depuis "RCC avec Préavis" (A2:C34 + paramètres F3:F36)
-const BUNDLE = {"sheet": "RCC avec Préavis", "cells": {"A2": {"f": null, "v": {"t": "str", "v": "Données d'entrée"}, "fmt": "General", "input": false, "opts": null}, "B2": {"f": null, "v": null, "fmt": "General", "input": false, "opts": null}, "C2": {"f": null, "v": null, "fmt": "General", "input": false, "opts": null}, "A3": {"f": null, "v": {"t": "str", "v": "Date de référence (notification / rupture)"}, "fmt": "General", "input": false, "opts": null}, "B3": {"f": null, "v": {"t": "date", "v": "2027-07-01"}, "fmt": "mm-dd-yy", "input": false, "opts": null}, "C3": {"f": null, "v": {"t": "date", "v": "2027-07-01"}, "fmt": "mm-dd-yy", "input": false, "opts": null}, "A4": {"f": null, "v": {"t": "str", "v": "Satut métallurgie"}, "fmt": "General", "input": false, "opts": null}, "B4": {"f": null, "v": {"t": "str", "v": "Cadre"}, "fmt": "General", "input": true, "opts": ["Cadre", "Non-Cadre"]}, "C4": {"f": "B4", "v": {"t": "str", "v": "Cadre"}, "fmt": "General", "input": true, "opts": ["Cadre", "Non-Cadre"]}, "A5": {"f": null, "v": {"t": "str", "v": "Dispositif Mobilité ou CFC (faire le choix)"}, "fmt": "General", "input": false, "opts": null}, "B5": {"f": null, "v": {"t": "str", "v": "CFC"}, "fmt": "General", "input": true, "opts": ["Mobilité", "CFC"]}, "C5": {"f": null, "v": {"t": "str", "v": "Mobilité"}, "fmt": "General", "input": true, "opts": ["Mobilité", "CFC"]}, "A6": {"f": null, "v": {"t": "str", "v": "Date de naissance"}, "fmt": "General", "input": false, "opts": null}, "B6": {"f": null, "v": {"t": "date", "v": "1975-06-01"}, "fmt": "mm-dd-yy", "input": true, "opts": null}, "C6": {"f": "B6", "v": {"t": "date", "v": "1975-06-01"}, "fmt": "mm-dd-yy", "input": true, "opts": null}, "A7": {"f": null, "v": {"t": "str", "v": "Age : années"}, "fmt": "General", "input": false, "opts": null}, "B7": {"f": "YEARFRAC(B3,B6,1)", "v": {"t": "num", "v": 52.08280814133691}, "fmt": "0.0\" ans\"", "input": false, "opts": null}, "C7": {"f": "YEARFRAC(C3,C6,1)", "v": {"t": "num", "v": 52.08280814133691}, "fmt": "0.0\" ans\"", "input": false, "opts": null}, "A8": {"f": null, "v": {"t": "str", "v": "Date d'entrée dans l'entreprise"}, "fmt": "General", "input": false, "opts": null}, "B8": {"f": null, "v": {"t": "date", "v": "1995-01-01"}, "fmt": "mm-dd-yy", "input": true, "opts": null}, "C8": {"f": "B8", "v": {"t": "date", "v": "1995-01-01"}, "fmt": "mm-dd-yy", "input": true, "opts": null}, "A9": {"f": null, "v": {"t": "str", "v": "Ancienneté : années"}, "fmt": "General", "input": false, "opts": null}, "B9": {"f": "YEARFRAC(B3,B8,1)", "v": {"t": "num", "v": 32.49622500622252}, "fmt": "0.0\" ans\"", "input": false, "opts": null}, "C9": {"f": "YEARFRAC(C3,C8,1)", "v": {"t": "num", "v": 32.49622500622252}, "fmt": "0.0\" ans\"", "input": false, "opts": null}, "A10": {"f": null, "v": {"t": "str", "v": "Salaire annuel brut de référence"}, "fmt": "General", "input": false, "opts": null}, "B10": {"f": null, "v": {"t": "num", "v": 72000.0}, "fmt": "#,##0", "input": true, "opts": null}, "C10": {"f": "B10", "v": {"t": "num", "v": 72000.0}, "fmt": "#,##0", "input": true, "opts": null}, "A11": {"f": null, "v": {"t": "str", "v": "Salaire mensuel brut de référence"}, "fmt": "General", "input": false, "opts": null}, "B11": {"f": "B10/12", "v": {"t": "num", "v": 6000.0}, "fmt": "#,##0", "input": false, "opts": null}, "C11": {"f": "C10/12", "v": {"t": "num", "v": 6000.0}, "fmt": "#,##0", "input": false, "opts": null}, "A12": {"f": null, "v": null, "fmt": "General", "input": false, "opts": null}, "B12": {"f": null, "v": null, "fmt": "General", "input": false, "opts": null}, "C12": {"f": null, "v": null, "fmt": "General", "input": false, "opts": null}, "A13": {"f": null, "v": {"t": "str", "v": "Calculs"}, "fmt": "General", "input": false, "opts": null}, "B13": {"f": null, "v": null, "fmt": "General", "input": false, "opts": null}, "C13": {"f": null, "v": null, "fmt": "General", "input": false, "opts": null}, "A14": {"f": null, "v": {"t": "str", "v": "Forcer ILL ?"}, "fmt": "General", "input": false, "opts": null}, "B14": {"f": null, "v": {"t": "str", "v": "Oui (défaut)"}, "fmt": "General", "input": true, "opts": ["Oui (défaut)", "Non"]}, "C14": {"f": null, "v": {"t": "str", "v": "Oui (défaut)"}, "fmt": "General", "input": true, "opts": ["Oui (défaut)", "Non"]}, "A15": {"f": null, "v": {"t": "str", "v": "Indemnité retenue"}, "fmt": "General", "input": false, "opts": null}, "B15": {"f": "_xlfn.LET(\n    _xlpm.age, B7,\n    _xlpm.statut, B4,\n    _xlpm.salaire, B11,\n    _xlpm.anciennete, B9,\n    _xlpm.dispositif, B5,\n    _xlpm.ancienneteCFC, _xlpm.salaire*($F$4*MIN(_xlpm.anciennete,10)+$F$5*MAX(_xlpm.anciennete-10,0)),\n    _xlpm.indemniteCFC, IF(_xlpm.anciennete<$F$3,0,_xlpm.ancienneteCFC),\n    _xlpm.coefMobilite, IF(_xlpm.anciennete<$F$12,$F$4*_xlpm.anciennete,$F$14*$F$13+$F$15*MAX(_xlpm.anciennete-$F$13,0)),\n    _xlpm.indemniteMobilite, _xlpm.salaire*_xlpm.coefMobilite,\n    _xlpm.bonusAge, IF(AND(_xlpm.age>=50,_xlpm.age<55,_xlpm.anciennete>=$F$6),MAX(_xlpm.indemniteMobilite*(1+$F$7),$F$9*_xlpm.salaire),IF(AND(_xlpm.age>=55,_xlpm.age<60,_xlpm.anciennete>=$F$6),MAX(_xlpm.indemniteMobilite*(1+$F$8),$F$10*_xlpm.salaire),_xlpm.indemniteMobilite)),\n    _xlpm.plafondMobilite, MIN(_xlpm.bonusAge,$F$11*_xlpm.salaire),\n    _xlpm.reductionSenior, IF(_xlpm.age=61,$F$17,IF(_xlpm.age=62,$F$18,IF(_xlpm.age=63,$F$19,IF(_xlpm.age>=64,$F$20,0)))),\n    _xlpm.resultatMobilite, IF(_xlpm.statut=\"Cadre\",IF(AND($F$16=\"Oui\",_xlpm.age>=61),MAX(_xlpm.plafondMobilite*(1-_xlpm.reductionSenior),_xlpm.indemniteCFC),_xlpm.plafondMobilite),_xlpm.indemniteCFC),\n\n    IF(B14=\"Oui (défaut)\",_xlpm.indemniteCFC,IF(_xlpm.dispositif=\"CFC\",_xlpm.indemniteCFC,_xlpm.resultatMobilite))\n)", "v": {"t": "num", "v": 59992.45001244503}, "fmt": "#,##0", "input": false, "opts": null}, "C15": {"f": "_xlfn.LET(\n    _xlpm.age, C7,\n    _xlpm.statut, C4,\n    _xlpm.salaire, C11,\n    _xlpm.anciennete, C9,\n    _xlpm.dispositif, C5,\n    _xlpm.ancienneteCFC, _xlpm.salaire*($F$4*MIN(_xlpm.anciennete,10)+$F$5*MAX(_xlpm.anciennete-10,0)),\n    _xlpm.indemniteCFC, IF(_xlpm.anciennete<$F$3,0,_xlpm.ancienneteCFC),\n    _xlpm.coefMobilite, IF(_xlpm.anciennete<$F$12,$F$4*_xlpm.anciennete,$F$14*$F$13+$F$15*MAX(_xlpm.anciennete-$F$13,0)),\n    _xlpm.indemniteMobilite, _xlpm.salaire*_xlpm.coefMobilite,\n    _xlpm.bonusAge, IF(AND(_xlpm.age>=50,_xlpm.age<55,_xlpm.anciennete>=$F$6),MAX(_xlpm.indemniteMobilite*(1+$F$7),$F$9*_xlpm.salaire),IF(AND(_xlpm.age>=55,_xlpm.age<60,_xlpm.anciennete>=$F$6),MAX(_xlpm.indemniteMobilite*(1+$F$8),$F$10*_xlpm.salaire),_xlpm.indemniteMobilite)),\n    _xlpm.plafondMobilite, MIN(_xlpm.bonusAge,$F$11*_xlpm.salaire),\n    _xlpm.reductionSenior, IF(_xlpm.age=61,$F$17,IF(_xlpm.age=62,$F$18,IF(_xlpm.age=63,$F$19,IF(_xlpm.age>=64,$F$20,0)))),\n    _xlpm.resultatMobilite, IF(_xlpm.statut=\"Cadre\",IF(AND($F$16=\"Oui\",_xlpm.age>=61),MAX(_xlpm.plafondMobilite*(1-_xlpm.reductionSenior),_xlpm.indemniteCFC),_xlpm.plafondMobilite),_xlpm.indemniteCFC),\n\n    IF(C14=\"Oui (défaut)\",_xlpm.indemniteCFC,IF(_xlpm.dispositif=\"CFC\",_xlpm.indemniteCFC,_xlpm.resultatMobilite))\n)", "v": {"t": "num", "v": 59992.45001244503}, "fmt": "#,##0", "input": false, "opts": null}, "A16": {"f": null, "v": {"t": "str", "v": "Supra-légale (Mobilité uniquement)"}, "fmt": "General", "input": false, "opts": null}, "B16": {"f": "IF(B5=\"CFC\",0,B11*MIN($F$25,$F$24*B9))", "v": {"t": "num", "v": 0.0}, "fmt": "#,##0", "input": false, "opts": null}, "C16": {"f": "IF(C5=\"CFC\",0,C11*MIN($F$25,$F$24*C9))", "v": {"t": "num", "v": 155981.88002986807}, "fmt": "#,##0", "input": false, "opts": null}, "A17": {"f": null, "v": {"t": "str", "v": "Total indemnité RCC avant plafond"}, "fmt": "General", "input": false, "opts": null}, "B17": {"f": "B15+B16", "v": {"t": "num", "v": 59992.45001244503}, "fmt": "#,##0", "input": false, "opts": null}, "C17": {"f": "C15+C16", "v": {"t": "num", "v": 215974.3300423131}, "fmt": "#,##0", "input": false, "opts": null}, "A18": {"f": null, "v": {"t": "str", "v": "Total indemnité RCC avec plafond"}, "fmt": "General", "input": false, "opts": null}, "B18": {"f": "_xlfn.LET(\n    _xlpm.montantMax, B17,\n    _xlpm.dispositif, B5,\n    _xlpm.salaireRef, B11,\n    _xlpm.anciennete, B9,\n    _xlpm.plafondCFC, MIN(IF($F$32=999,_xlpm.montantMax,$F$32*_xlpm.salaireRef),IF($F$33=999,_xlpm.montantMax,$F$33)),\n    _xlpm.indemniteCFC, IF(_xlpm.anciennete<$F$3,0,_xlpm.salaireRef*($F$4*MIN(_xlpm.anciennete,10)+$F$5*MAX(_xlpm.anciennete-10,0))),\n    _xlpm.plafondMobilite, MIN($F$26*_xlpm.salaireRef,$F$27),\n\n    IF(_xlpm.montantMax=\"\",\"\",IF(_xlpm.dispositif=\"CFC\",MAX(_xlpm.indemniteCFC,MIN(_xlpm.montantMax, _xlpm.plafondCFC)),MAX(B15,MIN(_xlpm.montantMax, _xlpm.plafondMobilite))))\n)", "v": {"t": "num", "v": 59992.45001244503}, "fmt": "#,##0", "input": false, "opts": null}, "C18": {"f": "_xlfn.LET(\n    _xlpm.montantMax, C17,\n    _xlpm.dispositif, C5,\n    _xlpm.salaireRef, C11,\n    _xlpm.anciennete, C9,\n    _xlpm.plafondCFC, MIN(IF($F$32=999,_xlpm.montantMax,$F$32*_xlpm.salaireRef),IF($F$33=999,_xlpm.montantMax,$F$33)),\n    _xlpm.indemniteCFC, IF(_xlpm.anciennete<$F$3,0,_xlpm.salaireRef*($F$4*MIN(_xlpm.anciennete,10)+$F$5*MAX(_xlpm.anciennete-10,0))),\n    _xlpm.plafondMobilite, MIN($F$26*_xlpm.salaireRef,$F$27),\n\n    IF(_xlpm.montantMax=\"\",\"\",IF(_xlpm.dispositif=\"CFC\",MAX(_xlpm.indemniteCFC,MIN(_xlpm.montantMax, _xlpm.plafondCFC)),MAX(C15,MIN(_xlpm.montantMax, _xlpm.plafondMobilite))))\n)", "v": {"t": "num", "v": 100000.0}, "fmt": "#,##0", "input": false, "opts": null}, "A19": {"f": null, "v": {"t": "str", "v": "Plafond atteint ?"}, "fmt": "General", "input": false, "opts": null}, "B19": {"f": "IF(B18<=B17,\"Oui\",\"Non\")", "v": {"t": "str", "v": "Oui"}, "fmt": "General", "input": false, "opts": null}, "C19": {"f": "IF(C18<=C17,\"Oui\",\"Non\")", "v": {"t": "str", "v": "Oui"}, "fmt": "General", "input": false, "opts": null}, "A20": {"f": null, "v": {"t": "str", "v": "Nombre de mois équivalent (Total RCC avec plafond)"}, "fmt": "General", "input": false, "opts": null}, "B20": {"f": "B18/B11", "v": {"t": "num", "v": 9.998741668740838}, "fmt": "0.0\" mois\"", "input": false, "opts": null}, "C20": {"f": "C18/C11", "v": {"t": "num", "v": 16.666666666666668}, "fmt": "0.0\" mois\"", "input": false, "opts": null}, "A21": {"f": null, "v": {"t": "str", "v": "Niveau de rémunération"}, "fmt": "General", "input": false, "opts": null}, "B21": {"f": "IF(B5=\"CFC\",$F$35,IF(B7<50,$F$30,$F$31))", "v": {"t": "num", "v": 0.7}, "fmt": "0%", "input": false, "opts": null}, "C21": {"f": "IF(C5=\"CFC\",$F$35,IF(C7<50,$F$30,$F$31))", "v": {"t": "num", "v": 0.8}, "fmt": "0%", "input": false, "opts": null}, "A22": {"f": null, "v": {"t": "str", "v": "Rémunération mensuelle brut pendant le dispositif"}, "fmt": "General", "input": false, "opts": null}, "B22": {"f": "B11*B21", "v": {"t": "num", "v": 4200.0}, "fmt": "#,##0", "input": false, "opts": null}, "C22": {"f": "C11*C21", "v": {"t": "num", "v": 4800.0}, "fmt": "#,##0", "input": false, "opts": null}, "A23": {"f": null, "v": {"t": "str", "v": "Durée du préavis"}, "fmt": "General", "input": false, "opts": null}, "B23": {"f": null, "v": {"t": "num", "v": 0.0}, "fmt": "General", "input": false, "opts": null}, "C23": {"f": null, "v": {"t": "num", "v": 0.0}, "fmt": "General", "input": false, "opts": null}, "A24": {"f": null, "v": {"t": "str", "v": "Durée maximale du dispositif"}, "fmt": "General", "input": false, "opts": null}, "B24": {"f": null, "v": {"t": "num", "v": 36.0}, "fmt": "General", "input": false, "opts": null}, "C24": {"f": null, "v": {"t": "num", "v": 15.0}, "fmt": "General", "input": false, "opts": null}, "A25": {"f": null, "v": {"t": "str", "v": "Date de sortie du dispositif"}, "fmt": "General", "input": false, "opts": null}, "B25": {"f": "EDATE(B3,B24)", "v": {"t": "date", "v": "2030-07-01"}, "fmt": "mm-dd-yy", "input": false, "opts": null}, "C25": {"f": "EDATE(C3,C24)", "v": {"t": "date", "v": "2028-10-01"}, "fmt": "mm-dd-yy", "input": false, "opts": null}, "A26": {"f": null, "v": {"t": "str", "v": "Rémunération Totale"}, "fmt": "General", "input": false, "opts": null}, "B26": {"f": "B22*(B24+B23*($F$36/B21-1))", "v": {"t": "num", "v": 151200.0}, "fmt": "#,##0", "input": false, "opts": null}, "C26": {"f": "C22*(C24+C23*($F$36/C21-1))", "v": {"t": "num", "v": 72000.0}, "fmt": "#,##0", "input": false, "opts": null}, "A27": {"f": null, "v": {"t": "str", "v": "Rémunération totale y compris indemnité totale"}, "fmt": "General", "input": false, "opts": null}, "B27": {"f": "B26+B18", "v": {"t": "num", "v": 211192.45001244504}, "fmt": "#,##0", "input": false, "opts": null}, "C27": {"f": "C26+C18", "v": {"t": "num", "v": 172000.0}, "fmt": "#,##0", "input": false, "opts": null}, "A28": {"f": null, "v": {"t": "str", "v": "Rémunération moyenne pendant la durée du dispositif"}, "fmt": "General", "input": false, "opts": null}, "B28": {"f": "B27/B24", "v": {"t": "num", "v": 5866.45694479014}, "fmt": "#,##0", "input": false, "opts": null}, "C28": {"f": "C27/C24", "v": {"t": "num", "v": 11466.666666666666}, "fmt": "#,##0", "input": false, "opts": null}, "A29": {"f": null, "v": {"t": "str", "v": "Ecart de salaire brut vs salaire de reference €"}, "fmt": "General", "input": false, "opts": null}, "B29": {"f": "B28-B11", "v": {"t": "num", "v": -133.54305520985963}, "fmt": "#,##0", "input": false, "opts": null}, "C29": {"f": "C28-C11", "v": {"t": "num", "v": 5466.666666666666}, "fmt": "#,##0", "input": false, "opts": null}, "A30": {"f": null, "v": {"t": "str", "v": "Nombre de mois équivalent vs salaire mensuel brut de référence"}, "fmt": "General", "input": false, "opts": null}, "B30": {"f": "B27/B11", "v": {"t": "num", "v": 35.19874166874084}, "fmt": "0.0\" mois\"", "input": false, "opts": null}, "C30": {"f": "C27/C11", "v": {"t": "num", "v": 28.666666666666668}, "fmt": "0.0\" mois\"", "input": false, "opts": null}, "A31": {"f": null, "v": null, "fmt": "General", "input": false, "opts": null}, "B31": {"f": null, "v": null, "fmt": "General", "input": false, "opts": null}, "C31": {"f": null, "v": null, "fmt": "General", "input": false, "opts": null}, "A32": {"f": null, "v": {"t": "str", "v": "Cotisations"}, "fmt": "General", "input": false, "opts": null}, "B32": {"f": null, "v": null, "fmt": "General", "input": false, "opts": null}, "C32": {"f": null, "v": null, "fmt": "General", "input": false, "opts": null}, "A33": {"f": null, "v": {"t": "str", "v": "Part Soumise cotisations URSAFF"}, "fmt": "General", "input": false, "opts": null}, "B33": {"f": "B18-IF(B18>=10*$F$21,0,MIN(B18,2*$F$21))", "v": {"t": "num", "v": 0.0}, "fmt": "#,##0", "input": false, "opts": null}, "C33": {"f": "C18-IF(C18>=10*$F$21,0,MIN(C18,2*$F$21))", "v": {"t": "num", "v": 3880.0}, "fmt": "#,##0", "input": false, "opts": null}, "A34": {"f": null, "v": {"t": "str", "v": "Part soumise CSG/CRDS"}, "fmt": "General", "input": false, "opts": null}, "B34": {"f": "IF(B18>=10*$F$21,B18,B18-MIN(B18,MIN(B15,B18-B33)))", "v": {"t": "num", "v": 0.0}, "fmt": "#,##0", "input": false, "opts": null}, "C34": {"f": "IF(C18>=10*$F$21,C18,C18-MIN(C18,MIN(C15,C18-C33)))", "v": {"t": "num", "v": 40007.54998755497}, "fmt": "#,##0", "input": false, "opts": null}, "F3": {"f": null, "v": {"t": "num", "v": 8.0}, "fmt": "General", "input": false, "opts": null, "isParam": true}, "F4": {"f": null, "v": {"t": "num", "v": 0.25}, "fmt": "0.00", "input": false, "opts": null, "isParam": true}, "F5": {"f": null, "v": {"t": "num", "v": 0.3333333333333333}, "fmt": "0.00", "input": false, "opts": null, "isParam": true}, "F6": {"f": null, "v": {"t": "num", "v": 5.0}, "fmt": "General", "input": false, "opts": null, "isParam": true}, "F7": {"f": null, "v": {"t": "num", "v": 0.2}, "fmt": "0%", "input": false, "opts": null, "isParam": true}, "F8": {"f": null, "v": {"t": "num", "v": 0.3}, "fmt": "0%", "input": false, "opts": null, "isParam": true}, "F9": {"f": null, "v": {"t": "num", "v": 3.0}, "fmt": "General", "input": false, "opts": null, "isParam": true}, "F10": {"f": null, "v": {"t": "num", "v": 6.0}, "fmt": "General", "input": false, "opts": null, "isParam": true}, "F11": {"f": null, "v": {"t": "num", "v": 18.0}, "fmt": "General", "input": false, "opts": null, "isParam": true}, "F12": {"f": null, "v": {"t": "num", "v": 8.0}, "fmt": "General", "input": false, "opts": null, "isParam": true}, "F13": {"f": null, "v": {"t": "num", "v": 7.0}, "fmt": "General", "input": false, "opts": null, "isParam": true}, "F14": {"f": null, "v": {"t": "num", "v": 0.2}, "fmt": "General", "input": false, "opts": null, "isParam": true}, "F15": {"f": null, "v": {"t": "num", "v": 0.6}, "fmt": "General", "input": false, "opts": null, "isParam": true}, "F16": {"f": null, "v": {"t": "str", "v": "Oui"}, "fmt": "General", "input": false, "opts": null, "isParam": true}, "F17": {"f": null, "v": {"t": "num", "v": 0.05}, "fmt": "0%", "input": false, "opts": null, "isParam": true}, "F18": {"f": null, "v": {"t": "num", "v": 0.1}, "fmt": "0%", "input": false, "opts": null, "isParam": true}, "F19": {"f": null, "v": {"t": "num", "v": 0.2}, "fmt": "0%", "input": false, "opts": null, "isParam": true}, "F20": {"f": null, "v": {"t": "num", "v": 0.4}, "fmt": "0%", "input": false, "opts": null, "isParam": true}, "F21": {"f": null, "v": {"t": "num", "v": 48060.0}, "fmt": "General", "input": false, "opts": null, "isParam": true}, "F22": {"f": null, "v": null, "fmt": "General", "input": false, "opts": null, "isParam": true}, "F23": {"f": null, "v": {"t": "str", "v": "Valeur"}, "fmt": "General", "input": false, "opts": null, "isParam": true}, "F24": {"f": null, "v": {"t": "num", "v": 0.8}, "fmt": "General", "input": false, "opts": null, "isParam": true}, "F25": {"f": null, "v": {"t": "num", "v": 999.0}, "fmt": "#,##0", "input": false, "opts": null, "isParam": true}, "F26": {"f": null, "v": {"t": "num", "v": 18.0}, "fmt": "#,##0", "input": false, "opts": null, "isParam": true}, "F27": {"f": null, "v": {"t": "num", "v": 100000.0}, "fmt": "#,##0", "input": false, "opts": null, "isParam": true}, "F28": {"f": null, "v": {"t": "num", "v": 12.0}, "fmt": "#,##0", "input": false, "opts": null, "isParam": true}, "F29": {"f": null, "v": {"t": "num", "v": 15.0}, "fmt": "#,##0", "input": false, "opts": null, "isParam": true}, "F30": {"f": null, "v": {"t": "num", "v": 0.75}, "fmt": "0%", "input": false, "opts": null, "isParam": true}, "F31": {"f": null, "v": {"t": "num", "v": 0.8}, "fmt": "0%", "input": false, "opts": null, "isParam": true}, "F32": {"f": null, "v": {"t": "num", "v": 999.0}, "fmt": "#,##0", "input": false, "opts": null, "isParam": true}, "F33": {"f": null, "v": {"t": "num", "v": 999.0}, "fmt": "#,##0", "input": false, "opts": null, "isParam": true}, "F34": {"f": null, "v": {"t": "num", "v": 36.0}, "fmt": "#,##0", "input": false, "opts": null, "isParam": true}, "F35": {"f": null, "v": {"t": "num", "v": 0.7}, "fmt": "0%", "input": false, "opts": null, "isParam": true}, "F36": {"f": null, "v": {"t": "num", "v": 9.99}, "fmt": "0%", "input": false, "opts": null, "isParam": true}}, "render": [["A2", "B2", "C2"], ["A3", "B3", "C3"], ["A4", "B4", "C4"], ["A5", "B5", "C5"], ["A6", "B6", "C6"], ["A7", "B7", "C7"], ["A8", "B8", "C8"], ["A9", "B9", "C9"], ["A10", "B10", "C10"], ["A11", "B11", "C11"], ["A12", "B12", "C12"], ["A13", "B13", "C13"], ["A14", "B14", "C14"], ["A15", "B15", "C15"], ["A16", "B16", "C16"], ["A17", "B17", "C17"], ["A18", "B18", "C18"], ["A19", "B19", "C19"], ["A20", "B20", "C20"], ["A21", "B21", "C21"], ["A22", "B22", "C22"], ["A23", "B23", "C23"], ["A24", "B24", "C24"], ["A25", "B25", "C25"], ["A26", "B26", "C26"], ["A27", "B27", "C27"], ["A28", "B28", "C28"], ["A29", "B29", "C29"], ["A30", "B30", "C30"], ["A31", "B31", "C31"], ["A32", "B32", "C32"], ["A33", "B33", "C33"], ["A34", "B34", "C34"]], "paramRows": [{"type": "header", "label": "Paramètres légaux (Par défaut, ne pas modifier)"}, {"type": "param", "addr": "F3", "label": "ILL - Ancienneté minimale (mois)", "comment": "Droit à indemnité si ancienneté >= 8 mois (règle légale + CCN)"}, {"type": "param", "addr": "F4", "label": "ILL - Taux 0-10 ans (mois/an)", "comment": "1/4 mois par année sur les 10 premières années"}, {"type": "param", "addr": "F5", "label": "ILL - Taux >10 ans (mois/an)", "comment": "1/3 mois par année au-delà de 10 ans"}, {"type": "param", "addr": "F6", "label": "ILC - Ancienneté mini requise (ans)", "comment": "Condition d'ancienneté pour majorations cadres 50-60 ans"}, {"type": "param", "addr": "F7", "label": "ILC - Majoration âge 50-55 (mois)", "comment": "Majoration +20% (cadres) si 50 <= âge < 55 et ancienneté >= 5 ans"}, {"type": "param", "addr": "F8", "label": "ILC - Majoration âge 55-60 (mois)", "comment": "Majoration +30% (cadres) si 55 <= âge < 60 et ancienneté >= 5 ans"}, {"type": "param", "addr": "F9", "label": "ILC - Plancher 50-55 (mois)", "comment": "Plancher : au moins 3 mois (cadres 50-55, ancienneté >= 5 ans)"}, {"type": "param", "addr": "F10", "label": "ILC - Plancher 55-60 (mois)", "comment": "Plancher : au moins 6 mois (cadres 55-60, ancienneté >= 5 ans)"}, {"type": "param", "addr": "F11", "label": "ILC - Plafond (mois)", "comment": "Plafond : 18 mois de salaire de référence (cadres)"}, {"type": "param", "addr": "F12", "label": "ILC - Seuil ancienneté régime cadres (années)", "comment": "Art. 75.3.1.2 : régime renforcé à partir de 8 ans (F,G,H,I)"}, {"type": "param", "addr": "F13", "label": "ILC - Seuil changement coeff (années)", "comment": "Art. 75.3.1.2 : changement de coeff à 7 ans (F,G,H,I)"}, {"type": "param", "addr": "F14", "label": "ILC - Coeff 1/5 (jusqu’à 7 ans)", "comment": "Art. 75.3.1.2 : 1/5 mois par année jusqu’à 7 ans (F,G,H,I)"}, {"type": "param", "addr": "F15", "label": "ILC - Coeff 3/5 (au-delà de 7 ans)", "comment": "Art. 75.3.1.2 : 3/5 mois par année au-delà de 7 ans (F,G,H,I)"}, {"type": "param", "addr": "F16", "label": "ILC - Minoration", "comment": "Non applicable si pas taux plein ou retraite compl. avec abattement"}, {"type": "param", "addr": "F17", "label": "ILC - Minoration 61 ans", "comment": "Décote : -5% à 61 ans (cadres)"}, {"type": "param", "addr": "F18", "label": "ILC - Minoration 62 ans", "comment": "Décote : -10% à 62 ans (cadres)"}, {"type": "param", "addr": "F19", "label": "ILC - Minoration 63 ans", "comment": "Décote : -20% à 63 ans (cadres)"}, {"type": "param", "addr": "F20", "label": "ILC - Minoration 64+ ans", "comment": "Décote : -40% à 64 ans et plus (cadres)"}, {"type": "param", "addr": "F21", "label": "PASS annuel", "comment": "Plafond Annuel Sécurité Sociale 2026"}, {"type": "header", "label": "Négociation"}, {"type": "param", "addr": "F24", "label": "Mobilité - Coefficient supra-légale (mois/an)", "comment": "Coefficient en mois de salaire par année d'ancienneté"}, {"type": "param", "addr": "F25", "label": "Mobilité - Plafond supra-légale mobilité (mois)", "comment": "Plafond en mois pour la supra (999 = pas de plafond)"}, {"type": "param", "addr": "F26", "label": "Mobilité - Plafond total RCC (mois)", "comment": "Plafond exprimé en nombre de mois de salaire (999 = pas de plafond)"}, {"type": "param", "addr": "F27", "label": "Mobilité - Plafond total RCC (€)", "comment": "Plafond exprimé en euros (999 = pas de plafond)"}, {"type": "param", "addr": "F28", "label": "Mobilité - Durée max < 50 ans (mois)", "comment": "Durée maximale si dispositif mobilité et âge < 50 ans"}, {"type": "param", "addr": "F29", "label": "Mobilité - Durée max ≥ 50 ans (mois)", "comment": "Durée maximale si dispositif mobilité et âge ≥ 50 ans"}, {"type": "param", "addr": "F30", "label": "Mobilité - Taux rémunération < 50 ans", "comment": "Rémunération : mobilité, âge < 50 ans"}, {"type": "param", "addr": "F31", "label": "Mobilité - Taux rémunération ≥ 50 ans", "comment": "Rémunération : mobilité, âge ≥ 50 ans"}, {"type": "param", "addr": "F32", "label": "CFC - Plafond total RCC (mois)", "comment": "Plafond exprimé en nombre de mois de salaire (999 = pas de plafond)"}, {"type": "param", "addr": "F33", "label": "CFC - Plafond total RCC (€)", "comment": "Plafond exprimé en euros (999 = pas de plafond)"}, {"type": "param", "addr": "F34", "label": "CFC - Durée max (mois)", "comment": "Durée maximale si dispositif CFC"}, {"type": "param", "addr": "F35", "label": "CFC - Taux rémunération", "comment": "Rémunération : CFC = 65% du salaire mensuel de référence"}, {"type": "param", "addr": "F36", "label": "Taux du préavis", "comment": "Taux du préavis (999% = Pas de préavis)"}], "paramDefaults": {"F3": {"t": "num", "v": 8.0}, "F4": {"t": "num", "v": 0.25}, "F5": {"t": "num", "v": 0.3333333333333333}, "F6": {"t": "num", "v": 5.0}, "F7": {"t": "num", "v": 0.2}, "F8": {"t": "num", "v": 0.3}, "F9": {"t": "num", "v": 3.0}, "F10": {"t": "num", "v": 6.0}, "F11": {"t": "num", "v": 18.0}, "F12": {"t": "num", "v": 8.0}, "F13": {"t": "num", "v": 7.0}, "F14": {"t": "num", "v": 0.2}, "F15": {"t": "num", "v": 0.6}, "F16": {"t": "str", "v": "Oui"}, "F17": {"t": "num", "v": 0.05}, "F18": {"t": "num", "v": 0.1}, "F19": {"t": "num", "v": 0.2}, "F20": {"t": "num", "v": 0.4}, "F21": {"t": "num", "v": 48060.0}, "F24": {"t": "num", "v": 0.8}, "F25": {"t": "num", "v": 999.0}, "F26": {"t": "num", "v": 18.0}, "F27": {"t": "num", "v": 100000.0}, "F28": {"t": "num", "v": 12.0}, "F29": {"t": "num", "v": 15.0}, "F30": {"t": "num", "v": 0.75}, "F31": {"t": "num", "v": 0.8}, "F32": {"t": "num", "v": 999.0}, "F33": {"t": "num", "v": 999.0}, "F34": {"t": "num", "v": 36.0}, "F35": {"t": "num", "v": 0.7}, "F36": {"t": "num", "v": 9.99}}, "editableA": ["B10", "B14", "B4", "B5", "B6", "B8", "C10", "C14", "C4", "C5", "C6", "C8"]};
+// Bundle encodé en base64 pour éviter les erreurs de parsing JS
+const B64 = 'eyJzaGVldCI6IlJDQyBhdmVjIFByw6lhdmlzIiwiY2VsbHMiOnsiQTIiOnsiZiI6bnVsbCwidiI6eyJ0Ijoic3RyIiwidiI6IkRvbm7DqWVzIGQnZW50csOpZSJ9LCJmbXQiOiJHZW5lcmFsIiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsfSwiQjIiOnsiZiI6bnVsbCwidiI6bnVsbCwiZm10IjoiR2VuZXJhbCIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbH0sIkMyIjp7ImYiOm51bGwsInYiOm51bGwsImZtdCI6IkdlbmVyYWwiLCJpbnB1dCI6ZmFsc2UsIm9wdHMiOm51bGx9LCJBMyI6eyJmIjpudWxsLCJ2Ijp7InQiOiJzdHIiLCJ2IjoiRGF0ZSBkZSByw6lmw6lyZW5jZSAobm90aWZpY2F0aW9uIC8gcnVwdHVyZSkifSwiZm10IjoiR2VuZXJhbCIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbH0sIkIzIjp7ImYiOm51bGwsInYiOnsidCI6ImRhdGUiLCJ2IjoiMjAyNy0wNy0wMSJ9LCJmbXQiOiJtbS1kZC15eSIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbH0sIkMzIjp7ImYiOm51bGwsInYiOnsidCI6ImRhdGUiLCJ2IjoiMjAyNy0wNy0wMSJ9LCJmbXQiOiJtbS1kZC15eSIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbH0sIkE0Ijp7ImYiOm51bGwsInYiOnsidCI6InN0ciIsInYiOiJTYXR1dCBtw6l0YWxsdXJnaWUifSwiZm10IjoiR2VuZXJhbCIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbH0sIkI0Ijp7ImYiOm51bGwsInYiOnsidCI6InN0ciIsInYiOiJDYWRyZSJ9LCJmbXQiOiJHZW5lcmFsIiwiaW5wdXQiOnRydWUsIm9wdHMiOlsiQ2FkcmUiLCJOb24tQ2FkcmUiXX0sIkM0Ijp7ImYiOiJCNCIsInYiOnsidCI6InN0ciIsInYiOiJDYWRyZSJ9LCJmbXQiOiJHZW5lcmFsIiwiaW5wdXQiOnRydWUsIm9wdHMiOlsiQ2FkcmUiLCJOb24tQ2FkcmUiXX0sIkE1Ijp7ImYiOm51bGwsInYiOnsidCI6InN0ciIsInYiOiJEaXNwb3NpdGlmIE1vYmlsaXTDqSBvdSBDRkMgKGZhaXJlIGxlIGNob2l4KSJ9LCJmbXQiOiJHZW5lcmFsIiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsfSwiQjUiOnsiZiI6bnVsbCwidiI6eyJ0Ijoic3RyIiwidiI6IkNGQyJ9LCJmbXQiOiJHZW5lcmFsIiwiaW5wdXQiOnRydWUsIm9wdHMiOlsiTW9iaWxpdMOpIiwiQ0ZDIl19LCJDNSI6eyJmIjpudWxsLCJ2Ijp7InQiOiJzdHIiLCJ2IjoiTW9iaWxpdMOpIn0sImZtdCI6IkdlbmVyYWwiLCJpbnB1dCI6dHJ1ZSwib3B0cyI6WyJNb2JpbGl0w6kiLCJDRkMiXX0sIkE2Ijp7ImYiOm51bGwsInYiOnsidCI6InN0ciIsInYiOiJEYXRlIGRlIG5haXNzYW5jZSJ9LCJmbXQiOiJHZW5lcmFsIiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsfSwiQjYiOnsiZiI6bnVsbCwidiI6eyJ0IjoiZGF0ZSIsInYiOiIxOTc1LTA2LTAxIn0sImZtdCI6Im1tLWRkLXl5IiwiaW5wdXQiOnRydWUsIm9wdHMiOm51bGx9LCJDNiI6eyJmIjoiQjYiLCJ2Ijp7InQiOiJkYXRlIiwidiI6IjE5NzUtMDYtMDEifSwiZm10IjoibW0tZGQteXkiLCJpbnB1dCI6dHJ1ZSwib3B0cyI6bnVsbH0sIkE3Ijp7ImYiOm51bGwsInYiOnsidCI6InN0ciIsInYiOiJBZ2UgOiBhbm7DqWVzIn0sImZtdCI6IkdlbmVyYWwiLCJpbnB1dCI6ZmFsc2UsIm9wdHMiOm51bGx9LCJCNyI6eyJmIjoiWUVBUkZSQUMoQjMsQjYsMSkiLCJ2Ijp7InQiOiJudW0iLCJ2Ijo1Mi4wODI4MDgxNDEzMzY5MX0sImZtdCI6IjAuMFwiIGFuc1wiIiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsfSwiQzciOnsiZiI6IllFQVJGUkFDKEMzLEM2LDEpIiwidiI6eyJ0IjoibnVtIiwidiI6NTIuMDgyODA4MTQxMzM2OTF9LCJmbXQiOiIwLjBcIiBhbnNcIiIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbH0sIkE4Ijp7ImYiOm51bGwsInYiOnsidCI6InN0ciIsInYiOiJEYXRlIGQnZW50csOpZSBkYW5zIGwnZW50cmVwcmlzZSJ9LCJmbXQiOiJHZW5lcmFsIiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsfSwiQjgiOnsiZiI6bnVsbCwidiI6eyJ0IjoiZGF0ZSIsInYiOiIxOTk1LTAxLTAxIn0sImZtdCI6Im1tLWRkLXl5IiwiaW5wdXQiOnRydWUsIm9wdHMiOm51bGx9LCJDOCI6eyJmIjoiQjgiLCJ2Ijp7InQiOiJkYXRlIiwidiI6IjE5OTUtMDEtMDEifSwiZm10IjoibW0tZGQteXkiLCJpbnB1dCI6dHJ1ZSwib3B0cyI6bnVsbH0sIkE5Ijp7ImYiOm51bGwsInYiOnsidCI6InN0ciIsInYiOiJBbmNpZW5uZXTDqSA6IGFubsOpZXMifSwiZm10IjoiR2VuZXJhbCIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbH0sIkI5Ijp7ImYiOiJZRUFSRlJBQyhCMyxCOCwxKSIsInYiOnsidCI6Im51bSIsInYiOjMyLjQ5NjIyNTAwNjIyMjUyfSwiZm10IjoiMC4wXCIgYW5zXCIiLCJpbnB1dCI6ZmFsc2UsIm9wdHMiOm51bGx9LCJDOSI6eyJmIjoiWUVBUkZSQUMoQzMsQzgsMSkiLCJ2Ijp7InQiOiJudW0iLCJ2IjozMi40OTYyMjUwMDYyMjI1Mn0sImZtdCI6IjAuMFwiIGFuc1wiIiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsfSwiQTEwIjp7ImYiOm51bGwsInYiOnsidCI6InN0ciIsInYiOiJTYWxhaXJlIGFubnVlbCBicnV0IGRlIHLDqWbDqXJlbmNlIn0sImZtdCI6IkdlbmVyYWwiLCJpbnB1dCI6ZmFsc2UsIm9wdHMiOm51bGx9LCJCMTAiOnsiZiI6bnVsbCwidiI6eyJ0IjoibnVtIiwidiI6NzIwMDAuMH0sImZtdCI6IiMsIyMwIiwiaW5wdXQiOnRydWUsIm9wdHMiOm51bGx9LCJDMTAiOnsiZiI6IkIxMCIsInYiOnsidCI6Im51bSIsInYiOjcyMDAwLjB9LCJmbXQiOiIjLCMjMCIsImlucHV0Ijp0cnVlLCJvcHRzIjpudWxsfSwiQTExIjp7ImYiOm51bGwsInYiOnsidCI6InN0ciIsInYiOiJTYWxhaXJlIG1lbnN1ZWwgYnJ1dCBkZSByw6lmw6lyZW5jZSJ9LCJmbXQiOiJHZW5lcmFsIiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsfSwiQjExIjp7ImYiOiJCMTAvMTIiLCJ2Ijp7InQiOiJudW0iLCJ2Ijo2MDAwLjB9LCJmbXQiOiIjLCMjMCIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbH0sIkMxMSI6eyJmIjoiQzEwLzEyIiwidiI6eyJ0IjoibnVtIiwidiI6NjAwMC4wfSwiZm10IjoiIywjIzAiLCJpbnB1dCI6ZmFsc2UsIm9wdHMiOm51bGx9LCJBMTIiOnsiZiI6bnVsbCwidiI6bnVsbCwiZm10IjoiR2VuZXJhbCIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbH0sIkIxMiI6eyJmIjpudWxsLCJ2IjpudWxsLCJmbXQiOiJHZW5lcmFsIiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsfSwiQzEyIjp7ImYiOm51bGwsInYiOm51bGwsImZtdCI6IkdlbmVyYWwiLCJpbnB1dCI6ZmFsc2UsIm9wdHMiOm51bGx9LCJBMTMiOnsiZiI6bnVsbCwidiI6eyJ0Ijoic3RyIiwidiI6IkNhbGN1bHMifSwiZm10IjoiR2VuZXJhbCIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbH0sIkIxMyI6eyJmIjpudWxsLCJ2IjpudWxsLCJmbXQiOiJHZW5lcmFsIiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsfSwiQzEzIjp7ImYiOm51bGwsInYiOm51bGwsImZtdCI6IkdlbmVyYWwiLCJpbnB1dCI6ZmFsc2UsIm9wdHMiOm51bGx9LCJBMTQiOnsiZiI6bnVsbCwidiI6eyJ0Ijoic3RyIiwidiI6IkZvcmNlciBJTEwgPyJ9LCJmbXQiOiJHZW5lcmFsIiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsfSwiQjE0Ijp7ImYiOm51bGwsInYiOnsidCI6InN0ciIsInYiOiJPdWkgKGTDqWZhdXQpIn0sImZtdCI6IkdlbmVyYWwiLCJpbnB1dCI6dHJ1ZSwib3B0cyI6WyJPdWkgKGTDqWZhdXQpIiwiTm9uIl19LCJDMTQiOnsiZiI6bnVsbCwidiI6eyJ0Ijoic3RyIiwidiI6Ik91aSAoZMOpZmF1dCkifSwiZm10IjoiR2VuZXJhbCIsImlucHV0Ijp0cnVlLCJvcHRzIjpbIk91aSAoZMOpZmF1dCkiLCJOb24iXX0sIkExNSI6eyJmIjpudWxsLCJ2Ijp7InQiOiJzdHIiLCJ2IjoiSW5kZW1uaXTDqSByZXRlbnVlIn0sImZtdCI6IkdlbmVyYWwiLCJpbnB1dCI6ZmFsc2UsIm9wdHMiOm51bGx9LCJCMTUiOnsiZiI6Il94bGZuLkxFVChcbiAgICBfeGxwbS5hZ2UsIEI3LFxuICAgIF94bHBtLnN0YXR1dCwgQjQsXG4gICAgX3hscG0uc2FsYWlyZSwgQjExLFxuICAgIF94bHBtLmFuY2llbm5ldGUsIEI5LFxuICAgIF94bHBtLmRpc3Bvc2l0aWYsIEI1LFxuICAgIF94bHBtLmFuY2llbm5ldGVDRkMsIF94bHBtLnNhbGFpcmUqKCRGJDQqTUlOKF94bHBtLmFuY2llbm5ldGUsMTApKyRGJDUqTUFYKF94bHBtLmFuY2llbm5ldGUtMTAsMCkpLFxuICAgIF94bHBtLmluZGVtbml0ZUNGQywgSUYoX3hscG0uYW5jaWVubmV0ZTwkRiQzLDAsX3hscG0uYW5jaWVubmV0ZUNGQyksXG4gICAgX3hscG0uY29lZk1vYmlsaXRlLCBJRihfeGxwbS5hbmNpZW5uZXRlPCRGJDEyLCRGJDQqX3hscG0uYW5jaWVubmV0ZSwkRiQxNCokRiQxMyskRiQxNSpNQVgoX3hscG0uYW5jaWVubmV0ZS0kRiQxMywwKSksXG4gICAgX3hscG0uaW5kZW1uaXRlTW9iaWxpdGUsIF94bHBtLnNhbGFpcmUqX3hscG0uY29lZk1vYmlsaXRlLFxuICAgIF94bHBtLmJvbnVzQWdlLCBJRihBTkQoX3hscG0uYWdlPj01MCxfeGxwbS5hZ2U8NTUsX3hscG0uYW5jaWVubmV0ZT49JEYkNiksTUFYKF94bHBtLmluZGVtbml0ZU1vYmlsaXRlKigxKyRGJDcpLCRGJDkqX3hscG0uc2FsYWlyZSksSUYoQU5EKF94bHBtLmFnZT49NTUsX3hscG0uYWdlPDYwLF94bHBtLmFuY2llbm5ldGU+PSRGJDYpLE1BWChfeGxwbS5pbmRlbW5pdGVNb2JpbGl0ZSooMSskRiQ4KSwkRiQxMCpfeGxwbS5zYWxhaXJlKSxfeGxwbS5pbmRlbW5pdGVNb2JpbGl0ZSkpLFxuICAgIF94bHBtLnBsYWZvbmRNb2JpbGl0ZSwgTUlOKF94bHBtLmJvbnVzQWdlLCRGJDExKl94bHBtLnNhbGFpcmUpLFxuICAgIF94bHBtLnJlZHVjdGlvblNlbmlvciwgSUYoX3hscG0uYWdlPTYxLCRGJDE3LElGKF94bHBtLmFnZT02MiwkRiQxOCxJRihfeGxwbS5hZ2U9NjMsJEYkMTksSUYoX3hscG0uYWdlPj02NCwkRiQyMCwwKSkpKSxcbiAgICBfeGxwbS5yZXN1bHRhdE1vYmlsaXRlLCBJRihfeGxwbS5zdGF0dXQ9XCJDYWRyZVwiLElGKEFORCgkRiQxNj1cIk91aVwiLF94bHBtLmFnZT49NjEpLE1BWChfeGxwbS5wbGFmb25kTW9iaWxpdGUqKDEtX3hscG0ucmVkdWN0aW9uU2VuaW9yKSxfeGxwbS5pbmRlbW5pdGVDRkMpLF94bHBtLnBsYWZvbmRNb2JpbGl0ZSksX3hscG0uaW5kZW1uaXRlQ0ZDKSxcblxuICAgIElGKEIxND1cIk91aSAoZMOpZmF1dClcIixfeGxwbS5pbmRlbW5pdGVDRkMsSUYoX3hscG0uZGlzcG9zaXRpZj1cIkNGQ1wiLF94bHBtLmluZGVtbml0ZUNGQyxfeGxwbS5yZXN1bHRhdE1vYmlsaXRlKSlcbikiLCJ2Ijp7InQiOiJudW0iLCJ2Ijo1OTk5Mi40NTAwMTI0NDUwM30sImZtdCI6IiMsIyMwIiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsfSwiQzE1Ijp7ImYiOiJfeGxmbi5MRVQoXG4gICAgX3hscG0uYWdlLCBDNyxcbiAgICBfeGxwbS5zdGF0dXQsIEM0LFxuICAgIF94bHBtLnNhbGFpcmUsIEMxMSxcbiAgICBfeGxwbS5hbmNpZW5uZXRlLCBDOSxcbiAgICBfeGxwbS5kaXNwb3NpdGlmLCBDNSxcbiAgICBfeGxwbS5hbmNpZW5uZXRlQ0ZDLCBfeGxwbS5zYWxhaXJlKigkRiQ0Kk1JTihfeGxwbS5hbmNpZW5uZXRlLDEwKSskRiQ1Kk1BWChfeGxwbS5hbmNpZW5uZXRlLTEwLDApKSxcbiAgICBfeGxwbS5pbmRlbW5pdGVDRkMsIElGKF94bHBtLmFuY2llbm5ldGU8JEYkMywwLF94bHBtLmFuY2llbm5ldGVDRkMpLFxuICAgIF94bHBtLmNvZWZNb2JpbGl0ZSwgSUYoX3hscG0uYW5jaWVubmV0ZTwkRiQxMiwkRiQ0Kl94bHBtLmFuY2llbm5ldGUsJEYkMTQqJEYkMTMrJEYkMTUqTUFYKF94bHBtLmFuY2llbm5ldGUtJEYkMTMsMCkpLFxuICAgIF94bHBtLmluZGVtbml0ZU1vYmlsaXRlLCBfeGxwbS5zYWxhaXJlKl94bHBtLmNvZWZNb2JpbGl0ZSxcbiAgICBfeGxwbS5ib251c0FnZSwgSUYoQU5EKF94bHBtLmFnZT49NTAsX3hscG0uYWdlPDU1LF94bHBtLmFuY2llbm5ldGU+PSRGJDYpLE1BWChfeGxwbS5pbmRlbW5pdGVNb2JpbGl0ZSooMSskRiQ3KSwkRiQ5Kl94bHBtLnNhbGFpcmUpLElGKEFORChfeGxwbS5hZ2U+PTU1LF94bHBtLmFnZTw2MCxfeGxwbS5hbmNpZW5uZXRlPj0kRiQ2KSxNQVgoX3hscG0uaW5kZW1uaXRlTW9iaWxpdGUqKDErJEYkOCksJEYkMTAqX3hscG0uc2FsYWlyZSksX3hscG0uaW5kZW1uaXRlTW9iaWxpdGUpKSxcbiAgICBfeGxwbS5wbGFmb25kTW9iaWxpdGUsIE1JTihfeGxwbS5ib251c0FnZSwkRiQxMSpfeGxwbS5zYWxhaXJlKSxcbiAgICBfeGxwbS5yZWR1Y3Rpb25TZW5pb3IsIElGKF94bHBtLmFnZT02MSwkRiQxNyxJRihfeGxwbS5hZ2U9NjIsJEYkMTgsSUYoX3hscG0uYWdlPTYzLCRGJDE5LElGKF94bHBtLmFnZT49NjQsJEYkMjAsMCkpKSksXG4gICAgX3hscG0ucmVzdWx0YXRNb2JpbGl0ZSwgSUYoX3hscG0uc3RhdHV0PVwiQ2FkcmVcIixJRihBTkQoJEYkMTY9XCJPdWlcIixfeGxwbS5hZ2U+PTYxKSxNQVgoX3hscG0ucGxhZm9uZE1vYmlsaXRlKigxLV94bHBtLnJlZHVjdGlvblNlbmlvciksX3hscG0uaW5kZW1uaXRlQ0ZDKSxfeGxwbS5wbGFmb25kTW9iaWxpdGUpLF94bHBtLmluZGVtbml0ZUNGQyksXG5cbiAgICBJRihDMTQ9XCJPdWkgKGTDqWZhdXQpXCIsX3hscG0uaW5kZW1uaXRlQ0ZDLElGKF94bHBtLmRpc3Bvc2l0aWY9XCJDRkNcIixfeGxwbS5pbmRlbW5pdGVDRkMsX3hscG0ucmVzdWx0YXRNb2JpbGl0ZSkpXG4pIiwidiI6eyJ0IjoibnVtIiwidiI6NTk5OTIuNDUwMDEyNDQ1MDN9LCJmbXQiOiIjLCMjMCIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbH0sIkExNiI6eyJmIjpudWxsLCJ2Ijp7InQiOiJzdHIiLCJ2IjoiU3VwcmEtbMOpZ2FsZSAoTW9iaWxpdMOpIHVuaXF1ZW1lbnQpIn0sImZtdCI6IkdlbmVyYWwiLCJpbnB1dCI6ZmFsc2UsIm9wdHMiOm51bGx9LCJCMTYiOnsiZiI6IklGKEI1PVwiQ0ZDXCIsMCxCMTEqTUlOKCRGJDI1LCRGJDI0KkI5KSkiLCJ2Ijp7InQiOiJudW0iLCJ2IjowLjB9LCJmbXQiOiIjLCMjMCIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbH0sIkMxNiI6eyJmIjoiSUYoQzU9XCJDRkNcIiwwLEMxMSpNSU4oJEYkMjUsJEYkMjQqQzkpKSIsInYiOnsidCI6Im51bSIsInYiOjE1NTk4MS44ODAwMjk4NjgwN30sImZtdCI6IiMsIyMwIiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsfSwiQTE3Ijp7ImYiOm51bGwsInYiOnsidCI6InN0ciIsInYiOiJUb3RhbCBpbmRlbW5pdMOpIFJDQyBhdmFudCBwbGFmb25kIn0sImZtdCI6IkdlbmVyYWwiLCJpbnB1dCI6ZmFsc2UsIm9wdHMiOm51bGx9LCJCMTciOnsiZiI6IkIxNStCMTYiLCJ2Ijp7InQiOiJudW0iLCJ2Ijo1OTk5Mi40NTAwMTI0NDUwM30sImZtdCI6IiMsIyMwIiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsfSwiQzE3Ijp7ImYiOiJDMTUrQzE2IiwidiI6eyJ0IjoibnVtIiwidiI6MjE1OTc0LjMzMDA0MjMxMzF9LCJmbXQiOiIjLCMjMCIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbH0sIkExOCI6eyJmIjpudWxsLCJ2Ijp7InQiOiJzdHIiLCJ2IjoiVG90YWwgaW5kZW1uaXTDqSBSQ0MgYXZlYyBwbGFmb25kIn0sImZtdCI6IkdlbmVyYWwiLCJpbnB1dCI6ZmFsc2UsIm9wdHMiOm51bGx9LCJCMTgiOnsiZiI6Il94bGZuLkxFVChcbiAgICBfeGxwbS5tb250YW50TWF4LCBCMTcsXG4gICAgX3hscG0uZGlzcG9zaXRpZiwgQjUsXG4gICAgX3hscG0uc2FsYWlyZVJlZiwgQjExLFxuICAgIF94bHBtLmFuY2llbm5ldGUsIEI5LFxuICAgIF94bHBtLnBsYWZvbmRDRkMsIE1JTihJRigkRiQzMj05OTksX3hscG0ubW9udGFudE1heCwkRiQzMipfeGxwbS5zYWxhaXJlUmVmKSxJRigkRiQzMz05OTksX3hscG0ubW9udGFudE1heCwkRiQzMykpLFxuICAgIF94bHBtLmluZGVtbml0ZUNGQywgSUYoX3hscG0uYW5jaWVubmV0ZTwkRiQzLDAsX3hscG0uc2FsYWlyZVJlZiooJEYkNCpNSU4oX3hscG0uYW5jaWVubmV0ZSwxMCkrJEYkNSpNQVgoX3hscG0uYW5jaWVubmV0ZS0xMCwwKSkpLFxuICAgIF94bHBtLnBsYWZvbmRNb2JpbGl0ZSwgTUlOKCRGJDI2Kl94bHBtLnNhbGFpcmVSZWYsJEYkMjcpLFxuXG4gICAgSUYoX3hscG0ubW9udGFudE1heD1cIlwiLFwiXCIsSUYoX3hscG0uZGlzcG9zaXRpZj1cIkNGQ1wiLE1BWChfeGxwbS5pbmRlbW5pdGVDRkMsTUlOKF94bHBtLm1vbnRhbnRNYXgsIF94bHBtLnBsYWZvbmRDRkMpKSxNQVgoQjE1LE1JTihfeGxwbS5tb250YW50TWF4LCBfeGxwbS5wbGFmb25kTW9iaWxpdGUpKSkpXG4pIiwidiI6eyJ0IjoibnVtIiwidiI6NTk5OTIuNDUwMDEyNDQ1MDN9LCJmbXQiOiIjLCMjMCIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbH0sIkMxOCI6eyJmIjoiX3hsZm4uTEVUKFxuICAgIF94bHBtLm1vbnRhbnRNYXgsIEMxNyxcbiAgICBfeGxwbS5kaXNwb3NpdGlmLCBDNSxcbiAgICBfeGxwbS5zYWxhaXJlUmVmLCBDMTEsXG4gICAgX3hscG0uYW5jaWVubmV0ZSwgQzksXG4gICAgX3hscG0ucGxhZm9uZENGQywgTUlOKElGKCRGJDMyPTk5OSxfeGxwbS5tb250YW50TWF4LCRGJDMyKl94bHBtLnNhbGFpcmVSZWYpLElGKCRGJDMzPTk5OSxfeGxwbS5tb250YW50TWF4LCRGJDMzKSksXG4gICAgX3hscG0uaW5kZW1uaXRlQ0ZDLCBJRihfeGxwbS5hbmNpZW5uZXRlPCRGJDMsMCxfeGxwbS5zYWxhaXJlUmVmKigkRiQ0Kk1JTihfeGxwbS5hbmNpZW5uZXRlLDEwKSskRiQ1Kk1BWChfeGxwbS5hbmNpZW5uZXRlLTEwLDApKSksXG4gICAgX3hscG0ucGxhZm9uZE1vYmlsaXRlLCBNSU4oJEYkMjYqX3hscG0uc2FsYWlyZVJlZiwkRiQyNyksXG5cbiAgICBJRihfeGxwbS5tb250YW50TWF4PVwiXCIsXCJcIixJRihfeGxwbS5kaXNwb3NpdGlmPVwiQ0ZDXCIsTUFYKF94bHBtLmluZGVtbml0ZUNGQyxNSU4oX3hscG0ubW9udGFudE1heCwgX3hscG0ucGxhZm9uZENGQykpLE1BWChDMTUsTUlOKF94bHBtLm1vbnRhbnRNYXgsIF94bHBtLnBsYWZvbmRNb2JpbGl0ZSkpKSlcbikiLCJ2Ijp7InQiOiJudW0iLCJ2IjoxMDAwMDAuMH0sImZtdCI6IiMsIyMwIiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsfSwiQTE5Ijp7ImYiOm51bGwsInYiOnsidCI6InN0ciIsInYiOiJQbGFmb25kIGF0dGVpbnQgPyJ9LCJmbXQiOiJHZW5lcmFsIiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsfSwiQjE5Ijp7ImYiOiJJRihCMTg8PUIxNyxcIk91aVwiLFwiTm9uXCIpIiwidiI6eyJ0Ijoic3RyIiwidiI6Ik91aSJ9LCJmbXQiOiJHZW5lcmFsIiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsfSwiQzE5Ijp7ImYiOiJJRihDMTg8PUMxNyxcIk91aVwiLFwiTm9uXCIpIiwidiI6eyJ0Ijoic3RyIiwidiI6Ik91aSJ9LCJmbXQiOiJHZW5lcmFsIiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsfSwiQTIwIjp7ImYiOm51bGwsInYiOnsidCI6InN0ciIsInYiOiJOb21icmUgZGUgbW9pcyDDqXF1aXZhbGVudCAoVG90YWwgUkNDIGF2ZWMgcGxhZm9uZCkifSwiZm10IjoiR2VuZXJhbCIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbH0sIkIyMCI6eyJmIjoiQjE4L0IxMSIsInYiOnsidCI6Im51bSIsInYiOjkuOTk4NzQxNjY4NzQwODM4fSwiZm10IjoiMC4wXCIgbW9pc1wiIiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsfSwiQzIwIjp7ImYiOiJDMTgvQzExIiwidiI6eyJ0IjoibnVtIiwidiI6MTYuNjY2NjY2NjY2NjY2NjY4fSwiZm10IjoiMC4wXCIgbW9pc1wiIiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsfSwiQTIxIjp7ImYiOm51bGwsInYiOnsidCI6InN0ciIsInYiOiJOaXZlYXUgZGUgcsOpbXVuw6lyYXRpb24ifSwiZm10IjoiR2VuZXJhbCIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbH0sIkIyMSI6eyJmIjoiSUYoQjU9XCJDRkNcIiwkRiQzNSxJRihCNzw1MCwkRiQzMCwkRiQzMSkpIiwidiI6eyJ0IjoibnVtIiwidiI6MC43fSwiZm10IjoiMCUiLCJpbnB1dCI6ZmFsc2UsIm9wdHMiOm51bGx9LCJDMjEiOnsiZiI6IklGKEM1PVwiQ0ZDXCIsJEYkMzUsSUYoQzc8NTAsJEYkMzAsJEYkMzEpKSIsInYiOnsidCI6Im51bSIsInYiOjAuOH0sImZtdCI6IjAlIiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsfSwiQTIyIjp7ImYiOm51bGwsInYiOnsidCI6InN0ciIsInYiOiJSw6ltdW7DqXJhdGlvbiBtZW5zdWVsbGUgYnJ1dCBwZW5kYW50IGxlIGRpc3Bvc2l0aWYifSwiZm10IjoiR2VuZXJhbCIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbH0sIkIyMiI6eyJmIjoiQjExKkIyMSIsInYiOnsidCI6Im51bSIsInYiOjQyMDAuMH0sImZtdCI6IiMsIyMwIiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsfSwiQzIyIjp7ImYiOiJDMTEqQzIxIiwidiI6eyJ0IjoibnVtIiwidiI6NDgwMC4wfSwiZm10IjoiIywjIzAiLCJpbnB1dCI6ZmFsc2UsIm9wdHMiOm51bGx9LCJBMjMiOnsiZiI6bnVsbCwidiI6eyJ0Ijoic3RyIiwidiI6IkR1csOpZSBkdSBwcsOpYXZpcyJ9LCJmbXQiOiJHZW5lcmFsIiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsfSwiQjIzIjp7ImYiOm51bGwsInYiOnsidCI6Im51bSIsInYiOjAuMH0sImZtdCI6IkdlbmVyYWwiLCJpbnB1dCI6ZmFsc2UsIm9wdHMiOm51bGx9LCJDMjMiOnsiZiI6bnVsbCwidiI6eyJ0IjoibnVtIiwidiI6MC4wfSwiZm10IjoiR2VuZXJhbCIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbH0sIkEyNCI6eyJmIjpudWxsLCJ2Ijp7InQiOiJzdHIiLCJ2IjoiRHVyw6llIG1heGltYWxlIGR1IGRpc3Bvc2l0aWYifSwiZm10IjoiR2VuZXJhbCIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbH0sIkIyNCI6eyJmIjpudWxsLCJ2Ijp7InQiOiJudW0iLCJ2IjozNi4wfSwiZm10IjoiR2VuZXJhbCIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbH0sIkMyNCI6eyJmIjpudWxsLCJ2Ijp7InQiOiJudW0iLCJ2IjoxNS4wfSwiZm10IjoiR2VuZXJhbCIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbH0sIkEyNSI6eyJmIjpudWxsLCJ2Ijp7InQiOiJzdHIiLCJ2IjoiRGF0ZSBkZSBzb3J0aWUgZHUgZGlzcG9zaXRpZiJ9LCJmbXQiOiJHZW5lcmFsIiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsfSwiQjI1Ijp7ImYiOiJFREFURShCMyxCMjQpIiwidiI6eyJ0IjoiZGF0ZSIsInYiOiIyMDMwLTA3LTAxIn0sImZtdCI6Im1tLWRkLXl5IiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsfSwiQzI1Ijp7ImYiOiJFREFURShDMyxDMjQpIiwidiI6eyJ0IjoiZGF0ZSIsInYiOiIyMDI4LTEwLTAxIn0sImZtdCI6Im1tLWRkLXl5IiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsfSwiQTI2Ijp7ImYiOm51bGwsInYiOnsidCI6InN0ciIsInYiOiJSw6ltdW7DqXJhdGlvbiBUb3RhbGUifSwiZm10IjoiR2VuZXJhbCIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbH0sIkIyNiI6eyJmIjoiQjIyKihCMjQrQjIzKigkRiQzNi9CMjEtMSkpIiwidiI6eyJ0IjoibnVtIiwidiI6MTUxMjAwLjB9LCJmbXQiOiIjLCMjMCIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbH0sIkMyNiI6eyJmIjoiQzIyKihDMjQrQzIzKigkRiQzNi9DMjEtMSkpIiwidiI6eyJ0IjoibnVtIiwidiI6NzIwMDAuMH0sImZtdCI6IiMsIyMwIiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsfSwiQTI3Ijp7ImYiOm51bGwsInYiOnsidCI6InN0ciIsInYiOiJSw6ltdW7DqXJhdGlvbiB0b3RhbGUgeSBjb21wcmlzIGluZGVtbml0w6kgdG90YWxlIn0sImZtdCI6IkdlbmVyYWwiLCJpbnB1dCI6ZmFsc2UsIm9wdHMiOm51bGx9LCJCMjciOnsiZiI6IkIyNitCMTgiLCJ2Ijp7InQiOiJudW0iLCJ2IjoyMTExOTIuNDUwMDEyNDQ1MDR9LCJmbXQiOiIjLCMjMCIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbH0sIkMyNyI6eyJmIjoiQzI2K0MxOCIsInYiOnsidCI6Im51bSIsInYiOjE3MjAwMC4wfSwiZm10IjoiIywjIzAiLCJpbnB1dCI6ZmFsc2UsIm9wdHMiOm51bGx9LCJBMjgiOnsiZiI6bnVsbCwidiI6eyJ0Ijoic3RyIiwidiI6IlLDqW11bsOpcmF0aW9uIG1veWVubmUgcGVuZGFudCBsYSBkdXLDqWUgZHUgZGlzcG9zaXRpZiJ9LCJmbXQiOiJHZW5lcmFsIiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsfSwiQjI4Ijp7ImYiOiJCMjcvQjI0IiwidiI6eyJ0IjoibnVtIiwidiI6NTg2Ni40NTY5NDQ3OTAxNH0sImZtdCI6IiMsIyMwIiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsfSwiQzI4Ijp7ImYiOiJDMjcvQzI0IiwidiI6eyJ0IjoibnVtIiwidiI6MTE0NjYuNjY2NjY2NjY2NjY2fSwiZm10IjoiIywjIzAiLCJpbnB1dCI6ZmFsc2UsIm9wdHMiOm51bGx9LCJBMjkiOnsiZiI6bnVsbCwidiI6eyJ0Ijoic3RyIiwidiI6IkVjYXJ0IGRlIHNhbGFpcmUgYnJ1dCB2cyBzYWxhaXJlIGRlIHJlZmVyZW5jZSDigqwifSwiZm10IjoiR2VuZXJhbCIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbH0sIkIyOSI6eyJmIjoiQjI4LUIxMSIsInYiOnsidCI6Im51bSIsInYiOi0xMzMuNTQzMDU1MjA5ODU5NjN9LCJmbXQiOiIjLCMjMCIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbH0sIkMyOSI6eyJmIjoiQzI4LUMxMSIsInYiOnsidCI6Im51bSIsInYiOjU0NjYuNjY2NjY2NjY2NjY2fSwiZm10IjoiIywjIzAiLCJpbnB1dCI6ZmFsc2UsIm9wdHMiOm51bGx9LCJBMzAiOnsiZiI6bnVsbCwidiI6eyJ0Ijoic3RyIiwidiI6Ik5vbWJyZSBkZSBtb2lzIMOpcXVpdmFsZW50IHZzIHNhbGFpcmUgbWVuc3VlbCBicnV0IGRlIHLDqWbDqXJlbmNlIn0sImZtdCI6IkdlbmVyYWwiLCJpbnB1dCI6ZmFsc2UsIm9wdHMiOm51bGx9LCJCMzAiOnsiZiI6IkIyNy9CMTEiLCJ2Ijp7InQiOiJudW0iLCJ2IjozNS4xOTg3NDE2Njg3NDA4NH0sImZtdCI6IjAuMFwiIG1vaXNcIiIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbH0sIkMzMCI6eyJmIjoiQzI3L0MxMSIsInYiOnsidCI6Im51bSIsInYiOjI4LjY2NjY2NjY2NjY2NjY2OH0sImZtdCI6IjAuMFwiIG1vaXNcIiIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbH0sIkEzMSI6eyJmIjpudWxsLCJ2IjpudWxsLCJmbXQiOiJHZW5lcmFsIiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsfSwiQjMxIjp7ImYiOm51bGwsInYiOm51bGwsImZtdCI6IkdlbmVyYWwiLCJpbnB1dCI6ZmFsc2UsIm9wdHMiOm51bGx9LCJDMzEiOnsiZiI6bnVsbCwidiI6bnVsbCwiZm10IjoiR2VuZXJhbCIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbH0sIkEzMiI6eyJmIjpudWxsLCJ2Ijp7InQiOiJzdHIiLCJ2IjoiQ290aXNhdGlvbnMifSwiZm10IjoiR2VuZXJhbCIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbH0sIkIzMiI6eyJmIjpudWxsLCJ2IjpudWxsLCJmbXQiOiJHZW5lcmFsIiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsfSwiQzMyIjp7ImYiOm51bGwsInYiOm51bGwsImZtdCI6IkdlbmVyYWwiLCJpbnB1dCI6ZmFsc2UsIm9wdHMiOm51bGx9LCJBMzMiOnsiZiI6bnVsbCwidiI6eyJ0Ijoic3RyIiwidiI6IlBhcnQgU291bWlzZSBjb3Rpc2F0aW9ucyBVUlNBRkYifSwiZm10IjoiR2VuZXJhbCIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbH0sIkIzMyI6eyJmIjoiQjE4LUlGKEIxOD49MTAqJEYkMjEsMCxNSU4oQjE4LDIqJEYkMjEpKSIsInYiOnsidCI6Im51bSIsInYiOjAuMH0sImZtdCI6IiMsIyMwIiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsfSwiQzMzIjp7ImYiOiJDMTgtSUYoQzE4Pj0xMCokRiQyMSwwLE1JTihDMTgsMiokRiQyMSkpIiwidiI6eyJ0IjoibnVtIiwidiI6Mzg4MC4wfSwiZm10IjoiIywjIzAiLCJpbnB1dCI6ZmFsc2UsIm9wdHMiOm51bGx9LCJBMzQiOnsiZiI6bnVsbCwidiI6eyJ0Ijoic3RyIiwidiI6IlBhcnQgc291bWlzZSBDU0cvQ1JEUyJ9LCJmbXQiOiJHZW5lcmFsIiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsfSwiQjM0Ijp7ImYiOiJJRihCMTg+PTEwKiRGJDIxLEIxOCxCMTgtTUlOKEIxOCxNSU4oQjE1LEIxOC1CMzMpKSkiLCJ2Ijp7InQiOiJudW0iLCJ2IjowLjB9LCJmbXQiOiIjLCMjMCIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbH0sIkMzNCI6eyJmIjoiSUYoQzE4Pj0xMCokRiQyMSxDMTgsQzE4LU1JTihDMTgsTUlOKEMxNSxDMTgtQzMzKSkpIiwidiI6eyJ0IjoibnVtIiwidiI6NDAwMDcuNTQ5OTg3NTU0OTd9LCJmbXQiOiIjLCMjMCIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbH0sIkYzIjp7ImYiOm51bGwsInYiOnsidCI6Im51bSIsInYiOjguMH0sImZtdCI6IkdlbmVyYWwiLCJpbnB1dCI6ZmFsc2UsIm9wdHMiOm51bGwsImlzUGFyYW0iOnRydWV9LCJGNCI6eyJmIjpudWxsLCJ2Ijp7InQiOiJudW0iLCJ2IjowLjI1fSwiZm10IjoiMC4wMCIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbCwiaXNQYXJhbSI6dHJ1ZX0sIkY1Ijp7ImYiOm51bGwsInYiOnsidCI6Im51bSIsInYiOjAuMzMzMzMzMzMzMzMzMzMzM30sImZtdCI6IjAuMDAiLCJpbnB1dCI6ZmFsc2UsIm9wdHMiOm51bGwsImlzUGFyYW0iOnRydWV9LCJGNiI6eyJmIjpudWxsLCJ2Ijp7InQiOiJudW0iLCJ2Ijo1LjB9LCJmbXQiOiJHZW5lcmFsIiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsLCJpc1BhcmFtIjp0cnVlfSwiRjciOnsiZiI6bnVsbCwidiI6eyJ0IjoibnVtIiwidiI6MC4yfSwiZm10IjoiMCUiLCJpbnB1dCI6ZmFsc2UsIm9wdHMiOm51bGwsImlzUGFyYW0iOnRydWV9LCJGOCI6eyJmIjpudWxsLCJ2Ijp7InQiOiJudW0iLCJ2IjowLjN9LCJmbXQiOiIwJSIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbCwiaXNQYXJhbSI6dHJ1ZX0sIkY5Ijp7ImYiOm51bGwsInYiOnsidCI6Im51bSIsInYiOjMuMH0sImZtdCI6IkdlbmVyYWwiLCJpbnB1dCI6ZmFsc2UsIm9wdHMiOm51bGwsImlzUGFyYW0iOnRydWV9LCJGMTAiOnsiZiI6bnVsbCwidiI6eyJ0IjoibnVtIiwidiI6Ni4wfSwiZm10IjoiR2VuZXJhbCIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbCwiaXNQYXJhbSI6dHJ1ZX0sIkYxMSI6eyJmIjpudWxsLCJ2Ijp7InQiOiJudW0iLCJ2IjoxOC4wfSwiZm10IjoiR2VuZXJhbCIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbCwiaXNQYXJhbSI6dHJ1ZX0sIkYxMiI6eyJmIjpudWxsLCJ2Ijp7InQiOiJudW0iLCJ2Ijo4LjB9LCJmbXQiOiJHZW5lcmFsIiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsLCJpc1BhcmFtIjp0cnVlfSwiRjEzIjp7ImYiOm51bGwsInYiOnsidCI6Im51bSIsInYiOjcuMH0sImZtdCI6IkdlbmVyYWwiLCJpbnB1dCI6ZmFsc2UsIm9wdHMiOm51bGwsImlzUGFyYW0iOnRydWV9LCJGMTQiOnsiZiI6bnVsbCwidiI6eyJ0IjoibnVtIiwidiI6MC4yfSwiZm10IjoiR2VuZXJhbCIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbCwiaXNQYXJhbSI6dHJ1ZX0sIkYxNSI6eyJmIjpudWxsLCJ2Ijp7InQiOiJudW0iLCJ2IjowLjZ9LCJmbXQiOiJHZW5lcmFsIiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsLCJpc1BhcmFtIjp0cnVlfSwiRjE2Ijp7ImYiOm51bGwsInYiOnsidCI6InN0ciIsInYiOiJPdWkifSwiZm10IjoiR2VuZXJhbCIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbCwiaXNQYXJhbSI6dHJ1ZX0sIkYxNyI6eyJmIjpudWxsLCJ2Ijp7InQiOiJudW0iLCJ2IjowLjA1fSwiZm10IjoiMCUiLCJpbnB1dCI6ZmFsc2UsIm9wdHMiOm51bGwsImlzUGFyYW0iOnRydWV9LCJGMTgiOnsiZiI6bnVsbCwidiI6eyJ0IjoibnVtIiwidiI6MC4xfSwiZm10IjoiMCUiLCJpbnB1dCI6ZmFsc2UsIm9wdHMiOm51bGwsImlzUGFyYW0iOnRydWV9LCJGMTkiOnsiZiI6bnVsbCwidiI6eyJ0IjoibnVtIiwidiI6MC4yfSwiZm10IjoiMCUiLCJpbnB1dCI6ZmFsc2UsIm9wdHMiOm51bGwsImlzUGFyYW0iOnRydWV9LCJGMjAiOnsiZiI6bnVsbCwidiI6eyJ0IjoibnVtIiwidiI6MC40fSwiZm10IjoiMCUiLCJpbnB1dCI6ZmFsc2UsIm9wdHMiOm51bGwsImlzUGFyYW0iOnRydWV9LCJGMjEiOnsiZiI6bnVsbCwidiI6eyJ0IjoibnVtIiwidiI6NDgwNjAuMH0sImZtdCI6IkdlbmVyYWwiLCJpbnB1dCI6ZmFsc2UsIm9wdHMiOm51bGwsImlzUGFyYW0iOnRydWV9LCJGMjIiOnsiZiI6bnVsbCwidiI6bnVsbCwiZm10IjoiR2VuZXJhbCIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbCwiaXNQYXJhbSI6dHJ1ZX0sIkYyMyI6eyJmIjpudWxsLCJ2Ijp7InQiOiJzdHIiLCJ2IjoiVmFsZXVyIn0sImZtdCI6IkdlbmVyYWwiLCJpbnB1dCI6ZmFsc2UsIm9wdHMiOm51bGwsImlzUGFyYW0iOnRydWV9LCJGMjQiOnsiZiI6bnVsbCwidiI6eyJ0IjoibnVtIiwidiI6MC44fSwiZm10IjoiR2VuZXJhbCIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbCwiaXNQYXJhbSI6dHJ1ZX0sIkYyNSI6eyJmIjpudWxsLCJ2Ijp7InQiOiJudW0iLCJ2Ijo5OTkuMH0sImZtdCI6IiMsIyMwIiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsLCJpc1BhcmFtIjp0cnVlfSwiRjI2Ijp7ImYiOm51bGwsInYiOnsidCI6Im51bSIsInYiOjE4LjB9LCJmbXQiOiIjLCMjMCIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbCwiaXNQYXJhbSI6dHJ1ZX0sIkYyNyI6eyJmIjpudWxsLCJ2Ijp7InQiOiJudW0iLCJ2IjoxMDAwMDAuMH0sImZtdCI6IiMsIyMwIiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsLCJpc1BhcmFtIjp0cnVlfSwiRjI4Ijp7ImYiOm51bGwsInYiOnsidCI6Im51bSIsInYiOjEyLjB9LCJmbXQiOiIjLCMjMCIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbCwiaXNQYXJhbSI6dHJ1ZX0sIkYyOSI6eyJmIjpudWxsLCJ2Ijp7InQiOiJudW0iLCJ2IjoxNS4wfSwiZm10IjoiIywjIzAiLCJpbnB1dCI6ZmFsc2UsIm9wdHMiOm51bGwsImlzUGFyYW0iOnRydWV9LCJGMzAiOnsiZiI6bnVsbCwidiI6eyJ0IjoibnVtIiwidiI6MC43NX0sImZtdCI6IjAlIiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsLCJpc1BhcmFtIjp0cnVlfSwiRjMxIjp7ImYiOm51bGwsInYiOnsidCI6Im51bSIsInYiOjAuOH0sImZtdCI6IjAlIiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsLCJpc1BhcmFtIjp0cnVlfSwiRjMyIjp7ImYiOm51bGwsInYiOnsidCI6Im51bSIsInYiOjk5OS4wfSwiZm10IjoiIywjIzAiLCJpbnB1dCI6ZmFsc2UsIm9wdHMiOm51bGwsImlzUGFyYW0iOnRydWV9LCJGMzMiOnsiZiI6bnVsbCwidiI6eyJ0IjoibnVtIiwidiI6OTk5LjB9LCJmbXQiOiIjLCMjMCIsImlucHV0IjpmYWxzZSwib3B0cyI6bnVsbCwiaXNQYXJhbSI6dHJ1ZX0sIkYzNCI6eyJmIjpudWxsLCJ2Ijp7InQiOiJudW0iLCJ2IjozNi4wfSwiZm10IjoiIywjIzAiLCJpbnB1dCI6ZmFsc2UsIm9wdHMiOm51bGwsImlzUGFyYW0iOnRydWV9LCJGMzUiOnsiZiI6bnVsbCwidiI6eyJ0IjoibnVtIiwidiI6MC43fSwiZm10IjoiMCUiLCJpbnB1dCI6ZmFsc2UsIm9wdHMiOm51bGwsImlzUGFyYW0iOnRydWV9LCJGMzYiOnsiZiI6bnVsbCwidiI6eyJ0IjoibnVtIiwidiI6OS45OX0sImZtdCI6IjAlIiwiaW5wdXQiOmZhbHNlLCJvcHRzIjpudWxsLCJpc1BhcmFtIjp0cnVlfX0sInJlbmRlciI6W1siQTIiLCJCMiIsIkMyIl0sWyJBMyIsIkIzIiwiQzMiXSxbIkE0IiwiQjQiLCJDNCJdLFsiQTUiLCJCNSIsIkM1Il0sWyJBNiIsIkI2IiwiQzYiXSxbIkE3IiwiQjciLCJDNyJdLFsiQTgiLCJCOCIsIkM4Il0sWyJBOSIsIkI5IiwiQzkiXSxbIkExMCIsIkIxMCIsIkMxMCJdLFsiQTExIiwiQjExIiwiQzExIl0sWyJBMTIiLCJCMTIiLCJDMTIiXSxbIkExMyIsIkIxMyIsIkMxMyJdLFsiQTE0IiwiQjE0IiwiQzE0Il0sWyJBMTUiLCJCMTUiLCJDMTUiXSxbIkExNiIsIkIxNiIsIkMxNiJdLFsiQTE3IiwiQjE3IiwiQzE3Il0sWyJBMTgiLCJCMTgiLCJDMTgiXSxbIkExOSIsIkIxOSIsIkMxOSJdLFsiQTIwIiwiQjIwIiwiQzIwIl0sWyJBMjEiLCJCMjEiLCJDMjEiXSxbIkEyMiIsIkIyMiIsIkMyMiJdLFsiQTIzIiwiQjIzIiwiQzIzIl0sWyJBMjQiLCJCMjQiLCJDMjQiXSxbIkEyNSIsIkIyNSIsIkMyNSJdLFsiQTI2IiwiQjI2IiwiQzI2Il0sWyJBMjciLCJCMjciLCJDMjciXSxbIkEyOCIsIkIyOCIsIkMyOCJdLFsiQTI5IiwiQjI5IiwiQzI5Il0sWyJBMzAiLCJCMzAiLCJDMzAiXSxbIkEzMSIsIkIzMSIsIkMzMSJdLFsiQTMyIiwiQjMyIiwiQzMyIl0sWyJBMzMiLCJCMzMiLCJDMzMiXSxbIkEzNCIsIkIzNCIsIkMzNCJdXSwicGFyYW1Sb3dzIjpbeyJ0eXBlIjoiaGVhZGVyIiwibGFiZWwiOiJQYXJhbcOodHJlcyBsw6lnYXV4IChQYXIgZMOpZmF1dCwgbmUgcGFzIG1vZGlmaWVyKSJ9LHsidHlwZSI6InBhcmFtIiwiYWRkciI6IkYzIiwibGFiZWwiOiJJTEwgLSBBbmNpZW5uZXTDqSBtaW5pbWFsZSAobW9pcykiLCJjb21tZW50IjoiRHJvaXQgw6AgaW5kZW1uaXTDqSBzaSBhbmNpZW5uZXTDqSA+PSA4IG1vaXMgKHLDqGdsZSBsw6lnYWxlICsgQ0NOKSJ9LHsidHlwZSI6InBhcmFtIiwiYWRkciI6IkY0IiwibGFiZWwiOiJJTEwgLSBUYXV4IDAtMTAgYW5zIChtb2lzL2FuKSIsImNvbW1lbnQiOiIxLzQgbW9pcyBwYXIgYW5uw6llIHN1ciBsZXMgMTAgcHJlbWnDqHJlcyBhbm7DqWVzIn0seyJ0eXBlIjoicGFyYW0iLCJhZGRyIjoiRjUiLCJsYWJlbCI6IklMTCAtIFRhdXggPjEwIGFucyAobW9pcy9hbikiLCJjb21tZW50IjoiMS8zIG1vaXMgcGFyIGFubsOpZSBhdS1kZWzDoCBkZSAxMCBhbnMifSx7InR5cGUiOiJwYXJhbSIsImFkZHIiOiJGNiIsImxhYmVsIjoiSUxDIC0gQW5jaWVubmV0w6kgbWluaSByZXF1aXNlIChhbnMpIiwiY29tbWVudCI6IkNvbmRpdGlvbiBkJ2FuY2llbm5ldMOpIHBvdXIgbWFqb3JhdGlvbnMgY2FkcmVzIDUwLTYwIGFucyJ9LHsidHlwZSI6InBhcmFtIiwiYWRkciI6IkY3IiwibGFiZWwiOiJJTEMgLSBNYWpvcmF0aW9uIMOiZ2UgNTAtNTUgKG1vaXMpIiwiY29tbWVudCI6Ik1ham9yYXRpb24gKzIwJSAoY2FkcmVzKSBzaSA1MCA8PSDDomdlIDwgNTUgZXQgYW5jaWVubmV0w6kgPj0gNSBhbnMifSx7InR5cGUiOiJwYXJhbSIsImFkZHIiOiJGOCIsImxhYmVsIjoiSUxDIC0gTWFqb3JhdGlvbiDDomdlIDU1LTYwIChtb2lzKSIsImNvbW1lbnQiOiJNYWpvcmF0aW9uICszMCUgKGNhZHJlcykgc2kgNTUgPD0gw6JnZSA8IDYwIGV0IGFuY2llbm5ldMOpID49IDUgYW5zIn0seyJ0eXBlIjoicGFyYW0iLCJhZGRyIjoiRjkiLCJsYWJlbCI6IklMQyAtIFBsYW5jaGVyIDUwLTU1IChtb2lzKSIsImNvbW1lbnQiOiJQbGFuY2hlciA6IGF1IG1vaW5zIDMgbW9pcyAoY2FkcmVzIDUwLTU1LCBhbmNpZW5uZXTDqSA+PSA1IGFucykifSx7InR5cGUiOiJwYXJhbSIsImFkZHIiOiJGMTAiLCJsYWJlbCI6IklMQyAtIFBsYW5jaGVyIDU1LTYwIChtb2lzKSIsImNvbW1lbnQiOiJQbGFuY2hlciA6IGF1IG1vaW5zIDYgbW9pcyAoY2FkcmVzIDU1LTYwLCBhbmNpZW5uZXTDqSA+PSA1IGFucykifSx7InR5cGUiOiJwYXJhbSIsImFkZHIiOiJGMTEiLCJsYWJlbCI6IklMQyAtIFBsYWZvbmQgKG1vaXMpIiwiY29tbWVudCI6IlBsYWZvbmQgOiAxOCBtb2lzIGRlIHNhbGFpcmUgZGUgcsOpZsOpcmVuY2UgKGNhZHJlcykifSx7InR5cGUiOiJwYXJhbSIsImFkZHIiOiJGMTIiLCJsYWJlbCI6IklMQyAtIFNldWlsIGFuY2llbm5ldMOpIHLDqWdpbWUgY2FkcmVzIChhbm7DqWVzKSIsImNvbW1lbnQiOiJBcnQuIDc1LjMuMS4yIDogcsOpZ2ltZSByZW5mb3Jjw6kgw6AgcGFydGlyIGRlIDggYW5zIChGLEcsSCxJKSJ9LHsidHlwZSI6InBhcmFtIiwiYWRkciI6IkYxMyIsImxhYmVsIjoiSUxDIC0gU2V1aWwgY2hhbmdlbWVudCBjb2VmZiAoYW5uw6llcykiLCJjb21tZW50IjoiQXJ0LiA3NS4zLjEuMiA6IGNoYW5nZW1lbnQgZGUgY29lZmYgw6AgNyBhbnMgKEYsRyxILEkpIn0seyJ0eXBlIjoicGFyYW0iLCJhZGRyIjoiRjE0IiwibGFiZWwiOiJJTEMgLSBDb2VmZiAxLzUgKGp1c3F14oCZw6AgNyBhbnMpIiwiY29tbWVudCI6IkFydC4gNzUuMy4xLjIgOiAxLzUgbW9pcyBwYXIgYW5uw6llIGp1c3F14oCZw6AgNyBhbnMgKEYsRyxILEkpIn0seyJ0eXBlIjoicGFyYW0iLCJhZGRyIjoiRjE1IiwibGFiZWwiOiJJTEMgLSBDb2VmZiAzLzUgKGF1LWRlbMOgIGRlIDcgYW5zKSIsImNvbW1lbnQiOiJBcnQuIDc1LjMuMS4yIDogMy81IG1vaXMgcGFyIGFubsOpZSBhdS1kZWzDoCBkZSA3IGFucyAoRixHLEgsSSkifSx7InR5cGUiOiJwYXJhbSIsImFkZHIiOiJGMTYiLCJsYWJlbCI6IklMQyAtIE1pbm9yYXRpb24iLCJjb21tZW50IjoiTm9uIGFwcGxpY2FibGUgc2kgcGFzIHRhdXggcGxlaW4gb3UgcmV0cmFpdGUgY29tcGwuIGF2ZWMgYWJhdHRlbWVudCJ9LHsidHlwZSI6InBhcmFtIiwiYWRkciI6IkYxNyIsImxhYmVsIjoiSUxDIC0gTWlub3JhdGlvbiA2MSBhbnMiLCJjb21tZW50IjoiRMOpY290ZSA6IC01JSDDoCA2MSBhbnMgKGNhZHJlcykifSx7InR5cGUiOiJwYXJhbSIsImFkZHIiOiJGMTgiLCJsYWJlbCI6IklMQyAtIE1pbm9yYXRpb24gNjIgYW5zIiwiY29tbWVudCI6IkTDqWNvdGUgOiAtMTAlIMOgIDYyIGFucyAoY2FkcmVzKSJ9LHsidHlwZSI6InBhcmFtIiwiYWRkciI6IkYxOSIsImxhYmVsIjoiSUxDIC0gTWlub3JhdGlvbiA2MyBhbnMiLCJjb21tZW50IjoiRMOpY290ZSA6IC0yMCUgw6AgNjMgYW5zIChjYWRyZXMpIn0seyJ0eXBlIjoicGFyYW0iLCJhZGRyIjoiRjIwIiwibGFiZWwiOiJJTEMgLSBNaW5vcmF0aW9uIDY0KyBhbnMiLCJjb21tZW50IjoiRMOpY290ZSA6IC00MCUgw6AgNjQgYW5zIGV0IHBsdXMgKGNhZHJlcykifSx7InR5cGUiOiJwYXJhbSIsImFkZHIiOiJGMjEiLCJsYWJlbCI6IlBBU1MgYW5udWVsIiwiY29tbWVudCI6IlBsYWZvbmQgQW5udWVsIFPDqWN1cml0w6kgU29jaWFsZSAyMDI2In0seyJ0eXBlIjoiaGVhZGVyIiwibGFiZWwiOiJOw6lnb2NpYXRpb24ifSx7InR5cGUiOiJwYXJhbSIsImFkZHIiOiJGMjQiLCJsYWJlbCI6Ik1vYmlsaXTDqSAtIENvZWZmaWNpZW50IHN1cHJhLWzDqWdhbGUgKG1vaXMvYW4pIiwiY29tbWVudCI6IkNvZWZmaWNpZW50IGVuIG1vaXMgZGUgc2FsYWlyZSBwYXIgYW5uw6llIGQnYW5jaWVubmV0w6kifSx7InR5cGUiOiJwYXJhbSIsImFkZHIiOiJGMjUiLCJsYWJlbCI6Ik1vYmlsaXTDqSAtIFBsYWZvbmQgc3VwcmEtbMOpZ2FsZSBtb2JpbGl0w6kgKG1vaXMpIiwiY29tbWVudCI6IlBsYWZvbmQgZW4gbW9pcyBwb3VyIGxhIHN1cHJhICg5OTkgPSBwYXMgZGUgcGxhZm9uZCkifSx7InR5cGUiOiJwYXJhbSIsImFkZHIiOiJGMjYiLCJsYWJlbCI6Ik1vYmlsaXTDqSAtIFBsYWZvbmQgdG90YWwgUkNDIChtb2lzKSIsImNvbW1lbnQiOiJQbGFmb25kIGV4cHJpbcOpIGVuIG5vbWJyZSBkZSBtb2lzIGRlIHNhbGFpcmUgKDk5OSA9IHBhcyBkZSBwbGFmb25kKSJ9LHsidHlwZSI6InBhcmFtIiwiYWRkciI6IkYyNyIsImxhYmVsIjoiTW9iaWxpdMOpIC0gUGxhZm9uZCB0b3RhbCBSQ0MgKOKCrCkiLCJjb21tZW50IjoiUGxhZm9uZCBleHByaW3DqSBlbiBldXJvcyAoOTk5ID0gcGFzIGRlIHBsYWZvbmQpIn0seyJ0eXBlIjoicGFyYW0iLCJhZGRyIjoiRjI4IiwibGFiZWwiOiJNb2JpbGl0w6kgLSBEdXLDqWUgbWF4IDwgNTAgYW5zIChtb2lzKSIsImNvbW1lbnQiOiJEdXLDqWUgbWF4aW1hbGUgc2kgZGlzcG9zaXRpZiBtb2JpbGl0w6kgZXQgw6JnZSA8IDUwIGFucyJ9LHsidHlwZSI6InBhcmFtIiwiYWRkciI6IkYyOSIsImxhYmVsIjoiTW9iaWxpdMOpIC0gRHVyw6llIG1heCDiiaUgNTAgYW5zIChtb2lzKSIsImNvbW1lbnQiOiJEdXLDqWUgbWF4aW1hbGUgc2kgZGlzcG9zaXRpZiBtb2JpbGl0w6kgZXQgw6JnZSDiiaUgNTAgYW5zIn0seyJ0eXBlIjoicGFyYW0iLCJhZGRyIjoiRjMwIiwibGFiZWwiOiJNb2JpbGl0w6kgLSBUYXV4IHLDqW11bsOpcmF0aW9uIDwgNTAgYW5zIiwiY29tbWVudCI6IlLDqW11bsOpcmF0aW9uIDogbW9iaWxpdMOpLCDDomdlIDwgNTAgYW5zIn0seyJ0eXBlIjoicGFyYW0iLCJhZGRyIjoiRjMxIiwibGFiZWwiOiJNb2JpbGl0w6kgLSBUYXV4IHLDqW11bsOpcmF0aW9uIOKJpSA1MCBhbnMiLCJjb21tZW50IjoiUsOpbXVuw6lyYXRpb24gOiBtb2JpbGl0w6ksIMOiZ2Ug4omlIDUwIGFucyJ9LHsidHlwZSI6InBhcmFtIiwiYWRkciI6IkYzMiIsImxhYmVsIjoiQ0ZDIC0gUGxhZm9uZCB0b3RhbCBSQ0MgKG1vaXMpIiwiY29tbWVudCI6IlBsYWZvbmQgZXhwcmltw6kgZW4gbm9tYnJlIGRlIG1vaXMgZGUgc2FsYWlyZSAoOTk5ID0gcGFzIGRlIHBsYWZvbmQpIn0seyJ0eXBlIjoicGFyYW0iLCJhZGRyIjoiRjMzIiwibGFiZWwiOiJDRkMgLSBQbGFmb25kIHRvdGFsIFJDQyAo4oKsKSIsImNvbW1lbnQiOiJQbGFmb25kIGV4cHJpbcOpIGVuIGV1cm9zICg5OTkgPSBwYXMgZGUgcGxhZm9uZCkifSx7InR5cGUiOiJwYXJhbSIsImFkZHIiOiJGMzQiLCJsYWJlbCI6IkNGQyAtIER1csOpZSBtYXggKG1vaXMpIiwiY29tbWVudCI6IkR1csOpZSBtYXhpbWFsZSBzaSBkaXNwb3NpdGlmIENGQyJ9LHsidHlwZSI6InBhcmFtIiwiYWRkciI6IkYzNSIsImxhYmVsIjoiQ0ZDIC0gVGF1eCByw6ltdW7DqXJhdGlvbiIsImNvbW1lbnQiOiJSw6ltdW7DqXJhdGlvbiA6IENGQyA9IDY1JSBkdSBzYWxhaXJlIG1lbnN1ZWwgZGUgcsOpZsOpcmVuY2UifSx7InR5cGUiOiJwYXJhbSIsImFkZHIiOiJGMzYiLCJsYWJlbCI6IlRhdXggZHUgcHLDqWF2aXMiLCJjb21tZW50IjoiVGF1eCBkdSBwcsOpYXZpcyAoOTk5JSA9IFBhcyBkZSBwcsOpYXZpcykifV0sInBhcmFtRGVmYXVsdHMiOnsiRjMiOnsidCI6Im51bSIsInYiOjguMH0sIkY0Ijp7InQiOiJudW0iLCJ2IjowLjI1fSwiRjUiOnsidCI6Im51bSIsInYiOjAuMzMzMzMzMzMzMzMzMzMzM30sIkY2Ijp7InQiOiJudW0iLCJ2Ijo1LjB9LCJGNyI6eyJ0IjoibnVtIiwidiI6MC4yfSwiRjgiOnsidCI6Im51bSIsInYiOjAuM30sIkY5Ijp7InQiOiJudW0iLCJ2IjozLjB9LCJGMTAiOnsidCI6Im51bSIsInYiOjYuMH0sIkYxMSI6eyJ0IjoibnVtIiwidiI6MTguMH0sIkYxMiI6eyJ0IjoibnVtIiwidiI6OC4wfSwiRjEzIjp7InQiOiJudW0iLCJ2Ijo3LjB9LCJGMTQiOnsidCI6Im51bSIsInYiOjAuMn0sIkYxNSI6eyJ0IjoibnVtIiwidiI6MC42fSwiRjE2Ijp7InQiOiJzdHIiLCJ2IjoiT3VpIn0sIkYxNyI6eyJ0IjoibnVtIiwidiI6MC4wNX0sIkYxOCI6eyJ0IjoibnVtIiwidiI6MC4xfSwiRjE5Ijp7InQiOiJudW0iLCJ2IjowLjJ9LCJGMjAiOnsidCI6Im51bSIsInYiOjAuNH0sIkYyMSI6eyJ0IjoibnVtIiwidiI6NDgwNjAuMH0sIkYyMiI6bnVsbCwiRjIzIjp7InQiOiJzdHIiLCJ2IjoiVmFsZXVyIn0sIkYyNCI6eyJ0IjoibnVtIiwidiI6MC44fSwiRjI1Ijp7InQiOiJudW0iLCJ2Ijo5OTkuMH0sIkYyNiI6eyJ0IjoibnVtIiwidiI6MTguMH0sIkYyNyI6eyJ0IjoibnVtIiwidiI6MTAwMDAwLjB9LCJGMjgiOnsidCI6Im51bSIsInYiOjEyLjB9LCJGMjkiOnsidCI6Im51bSIsInYiOjE1LjB9LCJGMzAiOnsidCI6Im51bSIsInYiOjAuNzV9LCJGMzEiOnsidCI6Im51bSIsInYiOjAuOH0sIkYzMiI6eyJ0IjoibnVtIiwidiI6OTk5LjB9LCJGMzMiOnsidCI6Im51bSIsInYiOjk5OS4wfSwiRjM0Ijp7InQiOiJudW0iLCJ2IjozNi4wfSwiRjM1Ijp7InQiOiJudW0iLCJ2IjowLjd9LCJGMzYiOnsidCI6Im51bSIsInYiOjkuOTl9fSwiZWRpdGFibGVBIjpbIkIxMCIsIkIxNCIsIkI0IiwiQjUiLCJCNiIsIkI4IiwiQzEwIiwiQzE0IiwiQzQiLCJDNSIsIkM2IiwiQzgiXX0=';
+const BUNDLE = JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(B64), c => c.charCodeAt(0))));
 
 const PARAM_KEY = 'rcc_params_v1';
 
-// --- utils date <-> excel style ---
 function toDate(v){
   if(v==null) return null;
   if(v instanceof Date) return v;
   if(typeof v==='string' && /^\d{4}-\d{2}-\d{2}$/.test(v)) return new Date(v+'T00:00:00');
-  if(typeof v==='string'){
-    const d=new Date(v);
-    return isNaN(d.getTime())? null : d;
-  }
-  return null;
+  const d=new Date(v);
+  return isNaN(d.getTime())? null : d;
 }
-
 function formatDateFR(d){
   if(!d) return '';
   const dd=String(d.getDate()).padStart(2,'0');
@@ -22,110 +18,60 @@ function formatDateFR(d){
   const yy=d.getFullYear();
   return `${dd}/${mm}/${yy}`;
 }
-
-function daysInYear(y){
-  return (new Date(y,1,29).getMonth()===1)?366:365;
-}
-
+function daysInYear(y){ return (new Date(y,1,29).getMonth()===1)?366:365; }
 function diffDays(d1,d2){
   const t1=Date.UTC(d1.getFullYear(),d1.getMonth(),d1.getDate());
   const t2=Date.UTC(d2.getFullYear(),d2.getMonth(),d2.getDate());
   return (t2-t1)/86400000;
 }
-
 function yearfracActualActual(d1,d2){
   if(!d1 || !d2) return 0;
-  // Dans ce fichier Excel, YEARFRAC est utilisé pour l'âge et l'ancienneté : on veut une valeur positive.
   if(d2<d1){ const tmp=d1; d1=d2; d2=tmp; }
-  const y1=d1.getFullYear();
-  const y2=d2.getFullYear();
-  if(y1===y2) return (diffDays(d1,d2) / daysInYear(y1));
-
-  // première année partielle
-  let frac = diffDays(d1, new Date(y1+1,0,1)) / daysInYear(y1);
-
-  // années pleines entre les deux
+  const y1=d1.getFullYear(), y2=d2.getFullYear();
+  if(y1===y2) return diffDays(d1,d2)/daysInYear(y1);
+  let frac = diffDays(d1, new Date(y1+1,0,1))/daysInYear(y1);
   for(let y=y1+1; y<y2; y++) frac += 1;
-
-  // dernière année partielle
-  frac += diffDays(new Date(y2,0,1), d2) / daysInYear(y2);
-
+  frac += diffDays(new Date(y2,0,1), d2)/daysInYear(y2);
   return frac;
 }
-
 function edate(d, months){
-  d = toDate(d);
-  if(!d) return null;
-  const m = Number(months)||0;
-  const y = d.getFullYear();
-  const mo = d.getMonth();
-  const day = d.getDate();
-  const target = new Date(y, mo + m, 1);
-  // last day of target month
-  const last = new Date(target.getFullYear(), target.getMonth()+1, 0).getDate();
-  target.setDate(Math.min(day, last));
+  d=toDate(d); if(!d) return null;
+  const m=Number(months)||0;
+  const y=d.getFullYear(), mo=d.getMonth(), day=d.getDate();
+  const target=new Date(y, mo+m, 1);
+  const last=new Date(target.getFullYear(), target.getMonth()+1, 0).getDate();
+  target.setDate(Math.min(day,last));
   return target;
 }
 
-// --- tokeniser / parser ---
 function tokenize(s){
-  const out=[];
-  let i=0;
+  const out=[]; let i=0;
   const isDigit=c=>c>='0'&&c<='9';
   const isAlpha=c=>/^[A-Za-z_]$/.test(c);
   while(i<s.length){
     const c=s[i];
     if(/\s/.test(c)){ i++; continue; }
-
-    // strings
     if(c==='"'){
       let j=i+1, str='';
-      while(j<s.length){
-        if(s[j]==='"') break;
-        str+=s[j];
-        j++;
-      }
-      out.push({t:'str', v:str});
-      i=j+1;
-      continue;
+      while(j<s.length && s[j]!=='"'){ str+=s[j++]; }
+      out.push({t:'str',v:str}); i=j+1; continue;
     }
-
-    // two-char operators
     const two=s.slice(i,i+2);
-    if(['<=','>=','<>'].includes(two)){ out.push({t:'op', v:two}); i+=2; continue; }
-
-    // single-char ops / punctuation
-    if(['+','-','*','/','^','(',')',',','=','<','>'].includes(c)){ out.push({t:(c===','?'comma':(c==='('||c===')'?'paren':'op')), v:c}); i++; continue; }
-
-    // number
+    if(['<=','>=','<>'].includes(two)){ out.push({t:'op',v:two}); i+=2; continue; }
+    if(['+','-','*','/','^','(',')',',','=','<','>'].includes(c)){
+      out.push({t:(c===','?'comma':(c==='('||c===')'?'paren':'op')),v:c}); i++; continue;
+    }
     if(isDigit(c) || (c==='.' && isDigit(s[i+1]))){
-      let j=i;
-      while(j<s.length && /[0-9.]/.test(s[j])) j++;
-      out.push({t:'num', v:Number(s.slice(i,j))});
-      i=j;
-      continue;
+      let j=i; while(j<s.length && /[0-9.]/.test(s[j])) j++;
+      out.push({t:'num',v:Number(s.slice(i,j))}); i=j; continue;
     }
-
-    // cell ref like $F$12
-    const cellMatch = s.slice(i).match(/^\$?[A-Z]{1,3}\$?\d+/);
-    if(cellMatch){
-      out.push({t:'cell', v:cellMatch[0].replaceAll('$','')});
-      i += cellMatch[0].length;
-      continue;
+    const cellMatch=s.slice(i).match(/^\$?[A-Z]{1,3}\$?\d+/);
+    if(cellMatch){ out.push({t:'cell',v:cellMatch[0].replaceAll('$','')}); i+=cellMatch[0].length; continue; }
+    if(isAlpha(c) || c==='.'){
+      let j=i; while(j<s.length && /[A-Za-z0-9_\.]/.test(s[j])) j++;
+      out.push({t:'ident',v:s.slice(i,j)}); i=j; continue;
     }
-
-    // identifier (functions, LET vars like _xlpm.age)
-    if(isAlpha(c) || c==='.' ){
-      let j=i;
-      while(j<s.length && /[A-Za-z0-9_\.]/.test(s[j])) j++;
-      let ident=s.slice(i,j);
-      out.push({t:'ident', v:ident});
-      i=j;
-      continue;
-    }
-
-    // unknown
-    out.push({t:'unknown', v:c});
+    // ignore unknown char
     i++;
   }
   return out;
@@ -135,117 +81,77 @@ function Parser(tokens){
   let p=0;
   const peek=()=>tokens[p];
   const take=()=>tokens[p++];
-  const match=(t,v)=>{ const k=peek(); if(!k) return false; if(k.t!==t) return false; if(v!=null && k.v!==v) return false; p++; return true; }
+  const match=(t,v)=>{ const k=peek(); if(!k||k.t!==t||(v!=null && k.v!==v)) return false; p++; return true; };
 
-  function parseExpression(){ return parseComparison(); }
-
-  function parseComparison(){
-    let node=parseAddSub();
+  function expr(){ return cmp(); }
+  function cmp(){
+    let n=add();
     while(true){
       const k=peek();
       if(k && k.t==='op' && ['=','<>','<','>','<=','>='].includes(k.v)){
-        const op=take().v;
-        const rhs=parseAddSub();
-        node={type:'bin', op, left:node, right:rhs};
+        const op=take().v; const r=add(); n={type:'bin',op,left:n,right:r};
       } else break;
     }
-    return node;
+    return n;
   }
-
-  function parseAddSub(){
-    let node=parseMulDiv();
+  function add(){
+    let n=mul();
     while(true){
       const k=peek();
-      if(k && k.t==='op' && (k.v==='+'||k.v==='-')){
-        const op=take().v;
-        const rhs=parseMulDiv();
-        node={type:'bin', op, left:node, right:rhs};
-      } else break;
+      if(k && k.t==='op' && (k.v==='+'||k.v==='-')){ const op=take().v; const r=mul(); n={type:'bin',op,left:n,right:r}; }
+      else break;
     }
-    return node;
+    return n;
   }
-
-  function parseMulDiv(){
-    let node=parsePower();
+  function mul(){
+    let n=pow();
     while(true){
       const k=peek();
-      if(k && k.t==='op' && (k.v==='*'||k.v==='/')){
-        const op=take().v;
-        const rhs=parsePower();
-        node={type:'bin', op, left:node, right:rhs};
-      } else break;
+      if(k && k.t==='op' && (k.v==='*'||k.v==='/')){ const op=take().v; const r=pow(); n={type:'bin',op,left:n,right:r}; }
+      else break;
     }
-    return node;
+    return n;
   }
-
-  function parsePower(){
-    let node=parseUnary();
+  function pow(){
+    let n=unary();
     const k=peek();
-    if(k && k.t==='op' && k.v==='^'){
-      take();
-      const rhs=parseUnary();
-      node={type:'bin', op:'^', left:node, right:rhs};
-    }
-    return node;
+    if(k && k.t==='op' && k.v==='^'){ take(); const r=unary(); n={type:'bin',op:'^',left:n,right:r}; }
+    return n;
   }
-
-  function parseUnary(){
+  function unary(){
     const k=peek();
-    if(k && k.t==='op' && (k.v==='+'||k.v==='-')){
-      const op=take().v;
-      return {type:'un', op, expr:parseUnary()};
-    }
-    return parsePrimary();
+    if(k && k.t==='op' && (k.v==='+'||k.v==='-')){ const op=take().v; return {type:'un',op,expr:unary()}; }
+    return prim();
   }
-
-  function parsePrimary(){
+  function prim(){
     const k=peek();
-    if(!k) return {type:'num', v:0};
-    if(match('num')) return {type:'num', v:tokens[p-1].v};
-    if(match('str')) return {type:'str', v:tokens[p-1].v};
-    if(match('cell')) return {type:'cell', v:tokens[p-1].v};
+    if(!k) return {type:'num',v:0};
+    if(match('num')) return {type:'num',v:tokens[p-1].v};
+    if(match('str')) return {type:'str',v:tokens[p-1].v};
+    if(match('cell')) return {type:'cell',v:tokens[p-1].v};
     if(match('ident')){
       const ident=tokens[p-1].v;
-      // function call?
       if(match('paren','(')){
         const args=[];
         if(!match('paren',')')){
-          while(true){
-            args.push(parseExpression());
-            if(match('comma',',')) continue;
-            if(match('paren',')')) break;
-            // tolerate missing comma
-            break;
-          }
+          while(true){ args.push(expr()); if(match('comma',',')) continue; match('paren',')'); break; }
         }
-        return {type:'call', name:ident, args};
+        return {type:'call',name:ident,args};
       }
-      return {type:'ident', v:ident};
+      return {type:'ident',v:ident};
     }
-    if(match('paren','(')){
-      const node=parseExpression();
-      match('paren',')');
-      return node;
-    }
-    // fallback
-    take();
-    return {type:'num', v:0};
+    if(match('paren','(')){ const n=expr(); match('paren',')'); return n; }
+    take(); return {type:'num',v:0};
   }
-
-  const ast=parseExpression();
-  return ast;
+  return expr();
 }
 
-// --- model / evaluator ---
-const AST_CACHE = new Map();
-
-function parseFormula(formula){
-  const key=formula;
-  if(AST_CACHE.has(key)) return AST_CACHE.get(key);
-  const norm = formula.replaceAll(';',',');
-  const tokens=tokenize(norm);
-  const ast=Parser(tokens);
-  AST_CACHE.set(key, ast);
+const AST_CACHE=new Map();
+function parseFormula(f){
+  f=f.replace(/_xlfn\./ig,'').replaceAll(';',',');
+  if(AST_CACHE.has(f)) return AST_CACHE.get(f);
+  const ast=Parser(tokenize(f));
+  AST_CACHE.set(f,ast);
   return ast;
 }
 
@@ -254,19 +160,11 @@ function truthy(x){
   if(typeof x==='boolean') return x;
   if(typeof x==='number') return x!==0 && !Number.isNaN(x);
   if(x instanceof Date) return true;
-  if(typeof x==='string') return x!=='';
-  return Boolean(x);
+  return String(x)!=='';
 }
-
 function compare(a,b,op){
-  // normalize dates
-  if(a instanceof Date && b instanceof Date){
-    a = a.getTime(); b=b.getTime();
-  } else if(a instanceof Date){
-    const bd=toDate(b); if(bd){ a=a.getTime(); b=bd.getTime(); }
-  } else if(b instanceof Date){
-    const ad=toDate(a); if(ad){ a=ad.getTime(); b=b.getTime(); }
-  }
+  if(a instanceof Date) a=a.getTime();
+  if(b instanceof Date) b=b.getTime();
   switch(op){
     case '=': return a==b;
     case '<>': return a!=b;
@@ -280,239 +178,146 @@ function compare(a,b,op){
 
 class Model{
   constructor(bundle){
-    this.bundle=bundle;
-    this.state={}; // cell -> {v,f,fmt,input,opts,isParam}
-    for(const [addr,def] of Object.entries(bundle.cells)){
-      this.state[addr] = structuredClone(def);
-    }
+    this.state=structuredClone(bundle.cells);
     this.cache=new Map();
     this.stack=new Set();
   }
-
-  setCell(addr, value){
-    addr=addr.replaceAll('$','');
-    const cell=this.state[addr] || (this.state[addr]={f:null,v:null,fmt:'General',input:true});
-    cell.v = value;
-    // if this is an input cell, we keep formula null
-    if(cell.input) cell.f=null;
-    this.cache.clear();
+  decode(enc){
+    if(enc==null) return null;
+    if(enc.t==='num') return Number(enc.v);
+    if(enc.t==='bool') return Boolean(enc.v);
+    if(enc.t==='date') return toDate(enc.v);
+    return String(enc.v);
   }
-
-  getCell(addr){
-    return this.state[addr.replaceAll('$','')];
-  }
-
-  decode(encoded){
-    if(encoded==null) return null;
-    if(encoded.t==='num') return Number(encoded.v);
-    if(encoded.t==='bool') return Boolean(encoded.v);
-    if(encoded.t==='date') return toDate(encoded.v);
-    return String(encoded.v);
-  }
-
+  getCell(addr){ return this.state[addr.replaceAll('$','')]; }
   getValue(addr, env=null){
     addr=addr.replaceAll('$','');
     if(env && Object.prototype.hasOwnProperty.call(env, addr)) return env[addr];
-    const key='cell:'+addr;
+    const key='c:'+addr;
     if(this.cache.has(key)) return this.cache.get(key);
-    if(this.stack.has(addr)) return null; // circular
+    if(this.stack.has(addr)) return null;
     this.stack.add(addr);
-
     const cell=this.state[addr];
     let v=null;
-    if(!cell) v=null;
-    else if(cell.f){
-      v=this.evalAst(parseFormula(this.normalizeFuncNames(cell.f)), env||{});
-    } else {
-      v=this.decode(cell.v);
-    }
-
+    if(cell && cell.f) v=this.evalAst(parseFormula(cell.f), env||{});
+    else v=this.decode(cell?.v);
     this.stack.delete(addr);
-    this.cache.set(key, v);
+    this.cache.set(key,v);
     return v;
   }
-
-  normalizeFuncNames(f){
-    return f.replace(/_xlfn\./ig,'');
-  }
-
   evalAst(node, env){
     switch(node.type){
       case 'num': return node.v;
       case 'str': return node.v;
       case 'cell': return this.getValue(node.v, env);
       case 'ident':
-        // LET locals stored in env
-        if(Object.prototype.hasOwnProperty.call(env, node.v)) return env[node.v];
-        // booleans
+        if(Object.prototype.hasOwnProperty.call(env,node.v)) return env[node.v];
         if(node.v.toUpperCase()==='TRUE') return true;
         if(node.v.toUpperCase()==='FALSE') return false;
         return null;
       case 'un':{
         const x=this.evalAst(node.expr, env);
-        const n=(x instanceof Date)? x : Number(x||0);
-        return node.op==='-' ? -n : n;
+        const n=Number(x||0);
+        return node.op==='-'? -n : n;
       }
       case 'bin':{
         const a=this.evalAst(node.left, env);
         const b=this.evalAst(node.right, env);
         if(['=','<>','<','>','<=','>='].includes(node.op)) return compare(a,b,node.op);
-        // date arithmetic
-        if(a instanceof Date && typeof b==='number'){
-          if(node.op==='+') return new Date(a.getFullYear(),a.getMonth(),a.getDate()+b);
-          if(node.op==='-') return new Date(a.getFullYear(),a.getMonth(),a.getDate()-b);
-        }
-        if(a instanceof Date && b instanceof Date && node.op==='-'){
-          return diffDays(b,a) * -1; // (a-b)
-        }
-        const an = (a instanceof Date)? a.getTime() : Number(a||0);
-        const bn = (b instanceof Date)? b.getTime() : Number(b||0);
+        const an=(a instanceof Date)? a.getTime():Number(a||0);
+        const bn=(b instanceof Date)? b.getTime():Number(b||0);
         switch(node.op){
-          case '+': return (typeof a==='string' || typeof b==='string') ? String(a??'')+String(b??'') : an+bn;
+          case '+': return (typeof a==='string'||typeof b==='string')? String(a??'')+String(b??''): an+bn;
           case '-': return an-bn;
           case '*': return an*bn;
-          case '/': return bn===0? 0 : an/bn;
+          case '/': return bn===0?0:an/bn;
           case '^': return Math.pow(an,bn);
         }
         return 0;
       }
-      case 'call':
-        return this.evalFunc(node.name, node.args, env);
+      case 'call': return this.evalFunc(node.name, node.args, env);
     }
     return null;
   }
-
-  evalFunc(name, args, env){
+  evalFunc(name,args,env){
     const U=name.toUpperCase();
-    if(U==='IF'){
-      const cond=this.evalAst(args[0], env);
-      return truthy(cond) ? this.evalAst(args[1], env) : this.evalAst(args[2] ?? {type:'num',v:0}, env);
-    }
-    if(U==='AND'){
-      for(const a of args) if(!truthy(this.evalAst(a, env))) return false;
-      return true;
-    }
-    if(U==='OR'){
-      for(const a of args) if(truthy(this.evalAst(a, env))) return true;
-      return false;
-    }
+    if(U==='IF') return truthy(this.evalAst(args[0],env))? this.evalAst(args[1],env) : this.evalAst(args[2]||{type:'num',v:0},env);
+    if(U==='AND') return args.every(a=>truthy(this.evalAst(a,env)));
     if(U==='MIN' || U==='MAX'){
-      const vals=args.map(a=>this.evalAst(a, env)).filter(v=>v!=null && v!=='');
-      const nums=vals.map(v=> (v instanceof Date)? v.getTime() : Number(v));
-      if(nums.length===0) return 0;
-      return (U==='MIN') ? Math.min(...nums) : Math.max(...nums);
+      const nums=args.map(a=>this.evalAst(a,env)).filter(v=>v!=null && v!=='').map(v=>v instanceof Date? v.getTime():Number(v));
+      if(!nums.length) return 0;
+      return U==='MIN'? Math.min(...nums):Math.max(...nums);
     }
     if(U==='LET'){
-      // LET(name1, value1, name2, value2, ..., result)
       const local={...env};
       for(let i=0;i<args.length-1;i+=2){
-        const nameNode=args[i];
-        const valNode=args[i+1];
-        const varName = (nameNode.type==='ident') ? nameNode.v : (nameNode.type==='str'? nameNode.v : null);
-        if(!varName) continue;
-        local[varName] = this.evalAst(valNode, local);
+        const nm=args[i].type==='ident'? args[i].v : (args[i].type==='str'?args[i].v:null);
+        if(!nm) continue;
+        local[nm]=this.evalAst(args[i+1], local);
       }
       return this.evalAst(args[args.length-1], local);
     }
     if(U==='YEARFRAC'){
-      const d1=this.evalAst(args[0], env);
-      const d2=this.evalAst(args[1], env);
-      const basis = args[2] ? Number(this.evalAst(args[2], env)) : 0;
-      const D1=toDate(d1); const D2=toDate(d2);
-      if(basis===1) return yearfracActualActual(D1,D2);
-      // fallback: actual/365
-      return (D1&&D2) ? diffDays(D1,D2)/365 : 0;
+      const d1=toDate(this.evalAst(args[0],env));
+      const d2=toDate(this.evalAst(args[1],env));
+      const basis=args[2]? Number(this.evalAst(args[2],env)):0;
+      if(basis===1) return yearfracActualActual(d1,d2);
+      return (d1&&d2)? diffDays(d1,d2)/365:0;
     }
-    if(U==='EDATE'){
-      const d=this.evalAst(args[0], env);
-      const m=this.evalAst(args[1], env);
-      return edate(d,m);
-    }
-
+    if(U==='EDATE') return edate(this.evalAst(args[0],env), this.evalAst(args[1],env));
     return null;
   }
-}
-
-function decodeParam(obj){
-  if(obj==null) return null;
-  if(obj.t==='date') return obj.v;
-  if(obj.t==='num') return obj.v;
-  if(obj.t==='bool') return obj.v;
-  return obj.v;
 }
 
 function loadParams(){
   const raw=localStorage.getItem(PARAM_KEY);
   if(!raw) return structuredClone(BUNDLE.paramDefaults);
-  try{
-    const o=JSON.parse(raw);
-    return {...structuredClone(BUNDLE.paramDefaults), ...o};
-  }catch{
-    return structuredClone(BUNDLE.paramDefaults);
-  }
+  try{ const o=JSON.parse(raw); return {...structuredClone(BUNDLE.paramDefaults), ...o}; }
+  catch{ return structuredClone(BUNDLE.paramDefaults); }
 }
 
 function applyParams(model){
   const params=loadParams();
   for(const [addr,enc] of Object.entries(params)){
-    if(!enc) continue;
-    model.state[addr] = model.state[addr] || {f:null,v:null,fmt:'General',input:false,isParam:true};
-    model.state[addr].v = enc;
+    if(enc==null) continue;
+    if(!model.state[addr]) model.state[addr]={f:null,v:null,fmt:'General',input:false};
+    model.state[addr].v=enc;
   }
-  return params;
 }
 
-// --- rendering ---
 function isDateFmt(fmt){
-  return (fmt||'').toLowerCase().includes('yy') || (fmt||'').toLowerCase().includes('dd') || (fmt||'').toLowerCase().includes('mm-');
+  fmt=String(fmt||'').toLowerCase();
+  return fmt.includes('yy') || fmt.includes('dd') || fmt.includes('mm-');
 }
 
 function formatValue(val, fmt, label){
   if(val==null) return '';
   if(val instanceof Date) return formatDateFR(val);
-  if(typeof val==='boolean') return val ? 'VRAI' : 'FAUX';
-
-  const f=(fmt||'').toLowerCase();
+  const f=String(fmt||'').toLowerCase();
   if(f.includes('" ans"')) return `${Number(val).toFixed(1)} ans`;
   if(f.includes('" mois"')) return `${Number(val).toFixed(1)} mois`;
   if(f.includes('%')) return `${(Number(val)*100).toFixed(0)}%`;
-
-  const isEuro = (label||'').includes('€') || /indemnité|rémunération|salaire|plafond/i.test(label||'');
-  if(isEuro) return new Intl.NumberFormat('fr-FR', {maximumFractionDigits:0}).format(Number(val||0)) + ' €';
-
-  if((fmt||'')==='#,##0') return new Intl.NumberFormat('fr-FR', {maximumFractionDigits:0}).format(Number(val||0));
-  if((fmt||'')==='General' && typeof val==='number') return new Intl.NumberFormat('fr-FR', {maximumFractionDigits:6}).format(val);
-  return String(val);
+  if(fmt==='#,##0') return new Intl.NumberFormat('fr-FR',{maximumFractionDigits:0}).format(Number(val||0));
+  return (typeof val==='number')? new Intl.NumberFormat('fr-FR',{maximumFractionDigits:6}).format(val): String(val);
 }
 
 function buildGrid(model){
   const table=document.getElementById('grid');
   table.innerHTML='';
-
-  // header
   const thead=document.createElement('thead');
-  const hr=document.createElement('tr');
-  hr.innerHTML = `<th class="colA">Libellé</th><th class="colB">Scénario B</th><th class="colC">Scénario C</th>`;
-  thead.appendChild(hr);
+  thead.innerHTML='<tr><th>Libellé</th><th>Scénario B</th><th>Scénario C</th></tr>';
   table.appendChild(thead);
-
   const tbody=document.createElement('tbody');
 
   for(const row of BUNDLE.render){
     const tr=document.createElement('tr');
-    const [aAddr,bAddr,cAddr]=row;
-
-    const aCell=model.getCell(aAddr);
-    const label = model.getValue(aAddr) ?? '';
-
-    // A column
+    const [a,b,c]=row;
+    const label=model.getValue(a);
     const tdA=document.createElement('td');
-    tdA.textContent = (typeof label==='string') ? label : formatValue(label, aCell?.fmt, '');
-    if(aCell && aCell.v && aCell.v.t==='str' && (aCell.v.v||'').toLowerCase().includes('calculs')) tdA.classList.add('muted');
+    tdA.textContent=String(label??'');
     tr.appendChild(tdA);
 
-    // B / C
-    for(const addr of [bAddr,cAddr]){
+    for(const addr of [b,c]){
       const cell=model.getCell(addr);
       const td=document.createElement('td');
       if(cell?.input){
@@ -521,107 +326,64 @@ function buildGrid(model){
         let el;
         if(cell.opts){
           el=document.createElement('select');
-          for(const opt of cell.opts){
-            const o=document.createElement('option');
-            o.value=opt; o.textContent=opt;
-            el.appendChild(o);
-          }
+          for(const opt of cell.opts){ const o=document.createElement('option'); o.value=opt; o.textContent=opt; el.appendChild(o); }
           el.value = decoded ?? cell.opts[0];
         } else if(isDateFmt(cell.fmt) || decoded instanceof Date){
-          el=document.createElement('input');
-          el.type='date';
-          const iso = decoded instanceof Date ? decoded.toISOString().slice(0,10) : (decoded||'');
-          el.value = iso;
-        } else if(typeof decoded==='number'){
-          el=document.createElement('input');
-          el.type='number';
-          el.step='any';
-          el.value = decoded;
+          el=document.createElement('input'); el.type='date';
+          el.value = decoded instanceof Date? decoded.toISOString().slice(0,10) : (decoded||'');
         } else {
-          el=document.createElement('input');
-          el.type='text';
-          el.value = decoded ?? '';
+          el=document.createElement('input'); el.type='number'; el.step='any';
+          el.value = (typeof decoded==='number')? decoded : '';
         }
-
-        el.dataset.addr=addr;
-        el.addEventListener('input', ()=>{
-          // store back as encoded
-          const val = (el.type==='date') ? el.value : (el.tagName==='SELECT'? el.value : el.value);
-          model.state[addr].v = (el.type==='date') ? {t:'date', v:val} : (isNaN(Number(val)) || el.tagName==='SELECT' ? {t:'str', v:val} : {t:'num', v:Number(val)});
+        el.addEventListener('input',()=>{
+          const val=(el.tagName==='SELECT')? el.value : el.value;
+          cell.v = (el.type==='date')? {t:'date',v:val} : (el.tagName==='SELECT'? {t:'str',v:val} : {t:'num',v:Number(val)});
+          cell.f=null;
           model.cache.clear();
-          recalcAndRender(model);
+          recalc(model);
         });
-
         td.appendChild(el);
       } else {
-        const v=model.getValue(addr);
-        td.textContent = formatValue(v, cell?.fmt, String(label||''));
+        td.textContent = formatValue(model.getValue(addr), cell?.fmt, label);
       }
       tr.appendChild(td);
     }
-
     tbody.appendChild(tr);
   }
-
   table.appendChild(tbody);
 }
 
-function recalcAndRender(model){
-  // trigger evaluation for all non-input cells in grid
-  for(const row of BUNDLE.render){
-    for(const addr of row){
-      const cell=model.getCell(addr);
-      if(cell && !cell.input && cell.f) model.getValue(addr);
-    }
+function recalc(model){
+  // evaluate all formula cells once
+  for(const [addr,cell] of Object.entries(model.state)){
+    if(cell?.f && !cell.input) model.getValue(addr);
   }
   buildGrid(model);
-  document.getElementById('debug').textContent = JSON.stringify(model.state, null, 2);
+  document.getElementById('debug').textContent = JSON.stringify(model.state,null,2);
 }
 
 function exportCSV(model){
-  const lines=[];
-  lines.push(['Adresse','Libellé','B','C'].join(';'));
+  const lines=['Adresse;Libellé;B;C'];
   for(const row of BUNDLE.render){
     const [a,b,c]=row;
-    const label=model.getValue(a);
+    const lab=model.getValue(a);
     const vb=model.getValue(b);
     const vc=model.getValue(c);
-    lines.push([a, String(label??''), String(vb instanceof Date? formatDateFR(vb): vb??''), String(vc instanceof Date? formatDateFR(vc): vc??'')].join(';'));
+    const fb = vb instanceof Date? formatDateFR(vb): String(vb??'');
+    const fc = vc instanceof Date? formatDateFR(vc): String(vc??'');
+    lines.push([a,String(lab??''),fb,fc].join(';'));
   }
   const blob=new Blob([lines.join('
-')], {type:'text/csv;charset=utf-8'});
+')],{type:'text/csv;charset=utf-8'});
   const url=URL.createObjectURL(blob);
-  const a=document.createElement('a');
-  a.href=url; a.download='sim_rcc.csv';
-  document.body.appendChild(a);
-  a.click();
-  a.remove();
-  URL.revokeObjectURL(url);
+  const a=document.createElement('a'); a.href=url; a.download='sim_rcc.csv';
+  document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
 }
 
-// init
 const model=new Model(BUNDLE);
-const params=applyParams(model);
+applyParams(model);
+for(const addr of BUNDLE.editableA){ if(model.state[addr]) model.state[addr].input=true; }
+recalc(model);
 
-// inputs defaults: keep existing values from workbook, but ensure they are encoded as date/num/str
-for(const addr of BUNDLE.editableA){
-  const cell=model.state[addr];
-  // if workbook gave a formula, data_only may have been null, so we use decoded value of formula if needed
-  if(cell && cell.f && !cell.v){
-    const v=model.getValue(addr);
-    if(v instanceof Date) cell.v={t:'date', v:v.toISOString().slice(0,10)};
-    else if(typeof v==='number') cell.v={t:'num', v:v};
-    else cell.v={t:'str', v:String(v??'')};
-    cell.f=null;
-  }
-  // if it's a date encoded as datetime in xlsx
-  if(cell && cell.v && cell.v.t==='date' && cell.v.v instanceof Date){
-    cell.v={t:'date', v:cell.v.v.toISOString().slice(0,10)};
-  }
-  if(cell) cell.input=true;
-}
-
-recalcAndRender(model);
-
-document.getElementById('btnRecalc').onclick=()=>recalcAndRender(model);
+document.getElementById('btnRecalc').onclick=()=>recalc(model);
 document.getElementById('btnExport').onclick=()=>exportCSV(model);

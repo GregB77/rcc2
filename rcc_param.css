@@ -19,6 +19,5 @@ button:hover,.primary:hover{filter:brightness(1.05)}
 .value{width:20%}
 .comment{width:36%;color:var(--muted)}
 input,select{width:100%;padding:9px 10px;border-radius:10px;border:1px solid var(--border);background:var(--input);color:var(--text)}
-.small{font-size:12px;color:var(--muted)}
 .debug{margin-top:16px}
 pre{white-space:pre-wrap;background:#0c1427;border:1px solid var(--border);padding:12px;border-radius:12px}
