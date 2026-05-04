@@ -373,7 +373,7 @@ function exportCSV(model){
     const fc = vc instanceof Date? formatDateFR(vc): String(vc??'');
     lines.push([a,String(lab??''),fb,fc].join(';'));
   }
-  const blob=new Blob([lines.join('')],{type:'text/csv;charset=utf-8'});
+  const blob=new Blob([lines.join('\r\n')],{ type:'text/csv;charset=utf-8' });
   const url=URL.createObjectURL(blob);
   const a=document.createElement('a'); a.href=url; a.download='sim_rcc.csv';
   document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
